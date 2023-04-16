@@ -19,6 +19,14 @@ export declare class freeCancellationSearchStandardResponseDTO {
     type: 'CANCEL.CONDITION' | 'NON.REFUNDABLE' | 'FREE.CANCELLATION';
     note: string;
 }
+export declare class location {
+    country: {
+        name: string;
+        destination: {
+            name: string;
+        };
+    };
+}
 export declare class ActivitySearchStandardResponseDTO {
     activityId: string;
     activityName: string;

@@ -24,6 +24,15 @@ export class freeCancellationSearchStandardResponseDTO {
   note: string;
 }
 
+export class location {
+  country: {
+    name: string;
+    destination: {
+      name: string;
+    };
+  };
+}
+
 export class ActivitySearchStandardResponseDTO {
   activityId: string;
   activityName: string;
