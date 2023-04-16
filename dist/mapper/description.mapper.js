@@ -23,4 +23,4 @@ exports.DescriptionMapper = {
     redeemInfo: 'Redeem Info',
     directEntrance: 'Direct Entrance',
 };
-//# sourceMappingURL=description-mapper.js.map
+//# sourceMappingURL=description.mapper.js.map
