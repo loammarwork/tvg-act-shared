@@ -23,12 +23,12 @@ __decorate([
     __metadata("design:type", String)
 ], SearchStandardRequestDTO.prototype, "keyword", void 0);
 __decorate([
-    (0, class_validator_1.IsDate)(),
+    (0, class_validator_1.IsISO8601)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], SearchStandardRequestDTO.prototype, "from", void 0);
 __decorate([
-    (0, class_validator_1.IsDate)(),
+    (0, class_validator_1.IsISO8601)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], SearchStandardRequestDTO.prototype, "to", void 0);

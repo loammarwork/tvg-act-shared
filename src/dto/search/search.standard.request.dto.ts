@@ -1,5 +1,5 @@
 import { Type } from 'class-transformer';
-import { IsString, IsNotEmpty, IsDate, IsObject, ValidateNested } from 'class-validator';
+import { IsString, IsNotEmpty, IsObject, ValidateNested, IsISO8601 } from 'class-validator';
 
 export class PaginationSearchStandardRequestDTO {
   itemsPerPage: number;
@@ -11,11 +11,11 @@ export class SearchStandardRequestDTO {
   @IsNotEmpty()
   keyword: string;
 
-  @IsDate()
+  @IsISO8601()
   @IsNotEmpty()
   from: string;
 
-  @IsDate()
+  @IsISO8601()
   @IsNotEmpty()
   to: string;
 
