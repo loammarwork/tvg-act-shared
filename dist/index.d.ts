@@ -1,1 +1,1 @@
-export { SearchStandardRequestDTO } from '../src/dto/search/search.standard.request.dto';
+export { SearchStandardRequestDTO } from './dto/search/search.standard.request.dto';
