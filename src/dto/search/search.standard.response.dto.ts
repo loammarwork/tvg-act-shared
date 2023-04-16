@@ -20,15 +20,22 @@ export class ImageSearchStandardResponseDTO {
 }
 
 export class freeCancellationSearchStandardResponseDTO {
-  type: 'CANCEL.CONDITION' | 'NON.REFUNDABLE' | 'FREE.CANCELLATION';
+  type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
   note: string;
 }
 
-export class location {
+//Attraction,Meeting Point,HOTEL_PICKUP,Meeting Hotel Pickup,Hotel Pickup,MEETING_POINT -> startingPoints
+//LANDMARK, ADDRESS, OTHER ,-> meetingPoint
+export class LocationSearchStandardResponseDTO {
   country: {
+    // เอาจากด้านบนสุดเพราะมีเสมอ
     name: string;
     destination: {
       name: string;
+    }[];
+    geolocation: {
+      latitude: number;
+      longitude: number;
     };
   };
 }
@@ -37,7 +44,7 @@ export class ActivitySearchStandardResponseDTO {
   activityId: string;
   activityName: string;
   activityType: string;
-  location: string;
+  location: LocationSearchStandardResponseDTO;
   segments: SegmentSearchStandardResponseDTO[];
   currency: string;
   targetMarket: any[];

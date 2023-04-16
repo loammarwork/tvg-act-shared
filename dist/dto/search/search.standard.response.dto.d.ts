@@ -16,14 +16,18 @@ export declare class ImageSearchStandardResponseDTO {
     urls: UrlImageSearchStandardResponseDTO[];
 }
 export declare class freeCancellationSearchStandardResponseDTO {
-    type: 'CANCEL.CONDITION' | 'NON.REFUNDABLE' | 'FREE.CANCELLATION';
+    type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
     note: string;
 }
-export declare class location {
+export declare class LocationSearchStandardResponseDTO {
     country: {
         name: string;
         destination: {
             name: string;
+        }[];
+        geolocation: {
+            latitude: number;
+            longitude: number;
         };
     };
 }
@@ -31,7 +35,7 @@ export declare class ActivitySearchStandardResponseDTO {
     activityId: string;
     activityName: string;
     activityType: string;
-    location: string;
+    location: LocationSearchStandardResponseDTO;
     segments: SegmentSearchStandardResponseDTO[];
     currency: string;
     targetMarket: any[];

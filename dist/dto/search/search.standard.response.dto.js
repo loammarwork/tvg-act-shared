@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SearchStandardResponseDTO = exports.PaginationSearchStandardRequestDTO = exports.ActivitySearchStandardResponseDTO = exports.location = exports.freeCancellationSearchStandardResponseDTO = exports.ImageSearchStandardResponseDTO = exports.UrlImageSearchStandardResponseDTO = exports.AmountFromSearchStandardResponseDTO = exports.SegmentSearchStandardResponseDTO = void 0;
+exports.SearchStandardResponseDTO = exports.PaginationSearchStandardRequestDTO = exports.ActivitySearchStandardResponseDTO = exports.LocationSearchStandardResponseDTO = exports.freeCancellationSearchStandardResponseDTO = exports.ImageSearchStandardResponseDTO = exports.UrlImageSearchStandardResponseDTO = exports.AmountFromSearchStandardResponseDTO = exports.SegmentSearchStandardResponseDTO = void 0;
 class SegmentSearchStandardResponseDTO {
 }
 exports.SegmentSearchStandardResponseDTO = SegmentSearchStandardResponseDTO;
@@ -16,9 +16,9 @@ exports.ImageSearchStandardResponseDTO = ImageSearchStandardResponseDTO;
 class freeCancellationSearchStandardResponseDTO {
 }
 exports.freeCancellationSearchStandardResponseDTO = freeCancellationSearchStandardResponseDTO;
-class location {
+class LocationSearchStandardResponseDTO {
 }
-exports.location = location;
+exports.LocationSearchStandardResponseDTO = LocationSearchStandardResponseDTO;
 class ActivitySearchStandardResponseDTO {
 }
 exports.ActivitySearchStandardResponseDTO = ActivitySearchStandardResponseDTO;
