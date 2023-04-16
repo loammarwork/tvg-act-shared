@@ -49,7 +49,7 @@ export class ActivitySearchStandardResponseDTO {
   segments: SegmentSearchStandardResponseDTO[];
   currency: string;
   targetMarket: any[];
-  amountFrom: AmountFromSearchStandardResponseDTO[];
+  amountFrom: AmountFromSearchStandardResponseDTO;
   images: ImageSearchStandardResponseDTO[];
   freeCancellation: freeCancellationSearchStandardResponseDTO;
 }
