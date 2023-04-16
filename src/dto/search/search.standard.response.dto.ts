@@ -33,10 +33,10 @@ export class LocationSearchStandardResponseDTO {
     destination: {
       name: string;
     };
-    geolocation: {
-      latitude: number;
-      longitude: number;
-    };
+  };
+  geolocation: {
+    latitude: number;
+    longitude: number;
   };
 }
 
