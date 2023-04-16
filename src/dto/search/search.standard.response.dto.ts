@@ -45,7 +45,7 @@ export class ActivitySearchStandardResponseDTO {
   activityName: string;
   activityType: string;
   location: LocationSearchStandardResponseDTO;
-  duration: number;
+  duration: number | null;
   segments: SegmentSearchStandardResponseDTO[];
   currency: string;
   targetMarket: any[];
