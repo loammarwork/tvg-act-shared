@@ -37,7 +37,7 @@ export class LocationSearchStandardResponseDTO {
   geolocation: {
     latitude: number;
     longitude: number;
-  };
+  } | null;
 }
 
 export class ActivitySearchStandardResponseDTO {

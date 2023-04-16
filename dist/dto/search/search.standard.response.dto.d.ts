@@ -29,7 +29,7 @@ export declare class LocationSearchStandardResponseDTO {
     geolocation: {
         latitude: number;
         longitude: number;
-    };
+    } | null;
 }
 export declare class ActivitySearchStandardResponseDTO {
     activityId: string;
