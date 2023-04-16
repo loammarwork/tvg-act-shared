@@ -1,6 +1,6 @@
 export declare class SegmentSearchStandardResponseDTO {
     segmentName: string;
-    segmentValues: string;
+    segmentValues: string[];
 }
 export declare class AmountFromSearchStandardResponseDTO {
     amount: number;
