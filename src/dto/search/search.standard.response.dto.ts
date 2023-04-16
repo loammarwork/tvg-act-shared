@@ -32,7 +32,7 @@ export class LocationSearchStandardResponseDTO {
     name: string;
     destination: {
       name: string;
-    }[];
+    };
     geolocation: {
       latitude: number;
       longitude: number;
