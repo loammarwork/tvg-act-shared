@@ -24,7 +24,7 @@ export declare class LocationSearchStandardResponseDTO {
         name: string;
         destination: {
             name: string;
-        }[];
+        };
         geolocation: {
             latitude: number;
             longitude: number;
@@ -36,6 +36,7 @@ export declare class ActivitySearchStandardResponseDTO {
     activityName: string;
     activityType: string;
     location: LocationSearchStandardResponseDTO;
+    duration: number;
     segments: SegmentSearchStandardResponseDTO[];
     currency: string;
     targetMarket: any[];

@@ -24,11 +24,11 @@ export class freeCancellationSearchStandardResponseDTO {
   note: string;
 }
 
-//Attraction,Meeting Point,HOTEL_PICKUP,Meeting Hotel Pickup,Hotel Pickup,MEETING_POINT -> startingPoints
-//LANDMARK, ADDRESS, OTHER ,-> meetingPoint
+// startingPoints -> Attraction,Meeting Point,HOTEL_PICKUP,Meeting Hotel Pickup,Hotel Pickup,MEETING_POINT
+// meetingPoint ->  LANDMARK, ADDRESS, OTHER
 export class LocationSearchStandardResponseDTO {
   country: {
-    // เอาจากด้านบนสุดเพราะมีเสมอ
+    // สำหรับ HotelBeds เอาจากด้านบนสุดเพราะมีเสมอ
     name: string;
     destination: {
       name: string;
@@ -45,6 +45,7 @@ export class ActivitySearchStandardResponseDTO {
   activityName: string;
   activityType: string;
   location: LocationSearchStandardResponseDTO;
+  duration: number;
   segments: SegmentSearchStandardResponseDTO[];
   currency: string;
   targetMarket: any[];
