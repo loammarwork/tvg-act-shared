@@ -6,7 +6,6 @@ export class SegmentSearchStandardResponseDTO {
 export class AmountFromSearchStandardResponseDTO {
   amount: number;
   nettAmount: number;
-  boxOfficeAmount: number;
 }
 
 export class UrlImageSearchStandardResponseDTO {

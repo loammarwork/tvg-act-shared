@@ -5,7 +5,6 @@ export declare class SegmentSearchStandardResponseDTO {
 export declare class AmountFromSearchStandardResponseDTO {
     amount: number;
     nettAmount: number;
-    boxOfficeAmount: number;
 }
 export declare class UrlImageSearchStandardResponseDTO {
     imageSize: 'SMALL' | 'MEDIUM' | 'LARGE';
