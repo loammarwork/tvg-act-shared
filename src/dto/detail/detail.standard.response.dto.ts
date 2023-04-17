@@ -15,6 +15,8 @@ export interface Activity {
   freeCancellation: FreeCancellation;
   //content
   activityDetails: ActivityDetail[];
+  scheduling: Scheduling;
+  routes: Route[];
   geoLocation: GeoLocation;
   images: Image[];
   //endcontent
@@ -129,12 +131,6 @@ export interface Package {
   packageDetails: PackageDetail[];
   amountsFrom: AmountsFrom[];
   ticketValidity: any;
-  duration: number | null;
-  routes: Route[];
-  scheduling: {
-    duration: number | null;
-    closed: [] | null;
-  };
   opened: Opened2[];
   isFavorite: boolean;
   redeemStart: any;
