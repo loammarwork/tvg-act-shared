@@ -16,7 +16,6 @@ export interface Activity {
     activityDetails: ActivityDetail[];
     scheduling: Scheduling;
     routes: Route[];
-    geoLocation: GeoLocation;
     guidingOptions: GuidingOptions;
     images: Image[];
     isOpenDated: boolean;
