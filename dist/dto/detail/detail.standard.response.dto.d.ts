@@ -16,11 +16,19 @@ export interface Activity {
     scheduling: Scheduling;
     routes: Route[];
     geoLocation: GeoLocation;
+    guidingOptions: GuidingOptions;
     images: Image[];
     isOpenDated: boolean;
     isBestSeller: boolean;
     amountFrom: AmountFrom;
     packages: Package[];
+}
+export interface GuidingOptions {
+    guideType: string;
+    included: boolean;
+    groupType?: string;
+    tips?: string;
+    maxGroupSize?: number;
 }
 export interface Location {
     country: Country;

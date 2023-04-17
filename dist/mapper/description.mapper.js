@@ -9,7 +9,6 @@ exports.DescriptionMapper = {
     aligibility: 'Aligibility',
     usageValidity: 'Usage Validity',
     additionalInfo: 'Additional Info',
-    highlights: 'Highlights',
     inclusions: 'Includes',
     howToUse: 'How to redeem',
     questions: 'Questions',
@@ -19,9 +18,11 @@ exports.DescriptionMapper = {
     excluded: 'Excludes',
     included: 'Includes',
     importantInfo: 'Important Info',
-    advancedTips: 'Advanced Tips',
     redeemInfo: 'Redeem Info',
     directEntrance: 'Direct Entrance',
+    featureGroups: 'Feature Groups',
     guidingOptions: 'Guiding Options',
+    advancedTips: 'Advanced Tips',
+    highlights: 'Highlights',
 };
 //# sourceMappingURL=description.mapper.js.map

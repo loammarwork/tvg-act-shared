@@ -18,6 +18,7 @@ export interface Activity {
   scheduling: Scheduling;
   routes: Route[];
   geoLocation: GeoLocation;
+  guidingOptions: GuidingOptions;
   images: Image[];
   //endcontent
   isOpenDated: boolean;
@@ -26,6 +27,13 @@ export interface Activity {
   packages: Package[];
 }
 
+export interface GuidingOptions {
+  guideType: string; //"TOURGUIDE"
+  included: boolean;
+  groupType?: string; //"SHARED","PRIVATE"
+  tips?: string; //"EXCLUDED"
+  maxGroupSize?: number;
+}
 export interface Location {
   country: Country;
 }

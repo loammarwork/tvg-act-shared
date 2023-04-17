@@ -17,7 +17,8 @@ export type DescriptionMapperType =
   | 'Advanced Tips'
   | 'Redeem Info'
   | 'Direct Entrance'
-  | 'Guiding Options';
+  | 'Guiding Options'
+  | 'Feature Groups';
 
 export const DescriptionMapper: Record<string, DescriptionMapperType> = {
   /* Extranet */
@@ -31,7 +32,7 @@ export const DescriptionMapper: Record<string, DescriptionMapperType> = {
   /* Extranet */
 
   /* GlobalTix */
-  highlights: 'Highlights',
+  // highlights: 'Highlights',
   inclusions: 'Includes',
   howToUse: 'How to redeem',
   questions: 'Questions',
@@ -44,9 +45,13 @@ export const DescriptionMapper: Record<string, DescriptionMapperType> = {
   excluded: 'Excludes',
   included: 'Includes',
   importantInfo: 'Important Info',
-  advancedTips: 'Advanced Tips',
+
   redeemInfo: 'Redeem Info',
   directEntrance: 'Direct Entrance',
+  //level activity
+  featureGroups: 'Feature Groups',
   guidingOptions: 'Guiding Options',
+  advancedTips: 'Advanced Tips',
+  highlights: 'Highlights',
   /* HotelBeds */
 } as const;
