@@ -8,6 +8,7 @@ export interface Activity {
     activityName: string;
     activityType: string;
     location: Location;
+    locationDetail: LocationDetail;
     segments: Segment[];
     currency: string;
     termsAndConditions: any[];
@@ -23,6 +24,29 @@ export interface Activity {
     amountFrom: AmountFrom;
     packages: Package[];
 }
+export interface LocationDetail {
+    endPoints: EndPoint[];
+    startingPoints: StartingPoint[];
+}
+export interface EndPoint {
+    type: string;
+    description: string;
+}
+export interface StartingPoint {
+    type: string;
+    meetingPoint: MeetingPoint;
+    pickupInstructions?: {
+        description: string;
+    }[];
+}
+export interface MeetingPoint {
+    type: string;
+    geolocation: Geolocation;
+    address: string;
+    country: Country2;
+    city: string;
+    description: string;
+}
 export interface GuidingOptions {
     guideType: string;
     included: boolean;
@@ -37,6 +61,15 @@ export interface Country {
     name: string;
     destination: Destination;
     address: string;
+}
+export interface Country2 {
+    code: string;
+    name: string;
+    destinations: Destination2[];
+}
+export interface Destination2 {
+    code: string;
+    name: string;
 }
 export interface Destination {
     name: string;
