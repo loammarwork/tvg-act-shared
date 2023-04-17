@@ -22,5 +22,6 @@ exports.DescriptionMapper = {
     advancedTips: 'Advanced Tips',
     redeemInfo: 'Redeem Info',
     directEntrance: 'Direct Entrance',
+    guidingOptions: 'Guiding Options',
 };
 //# sourceMappingURL=description.mapper.js.map

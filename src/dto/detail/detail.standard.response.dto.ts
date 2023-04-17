@@ -1,23 +1,23 @@
 export class DetailStandardResponseDTO {
   success: boolean;
   identifier: string;
-  data: Data;
+  data: Activity;
 }
 
-export interface Data {
+export interface Activity {
   activityId: string;
   activityName: string;
   activityType: string;
   location: Location;
-  routes: any[];
-  scheduling: Scheduling;
   segments: Segment[];
   currency: string;
   termsAndConditions: any[];
   freeCancellation: FreeCancellation;
+  //content
   activityDetails: ActivityDetail[];
   geoLocation: GeoLocation;
   images: Image[];
+  //endcontent
   isOpenDated: boolean;
   isBestSeller: boolean;
   amountFrom: AmountFrom;
@@ -91,17 +91,46 @@ export interface Url {
 export interface AmountFrom {
   amount: number;
   nettAmount: number;
-  boxOfficeAmount: number;
 }
 
+export interface Point {
+  type: string; //POI
+  order: number;
+  stop: boolean;
+  pointOfInterest: {
+    type: string; //LANDMARK,OTHER,ADDRESS
+    geolocation: GeoLocation;
+    address: string;
+    country: {
+      code: string;
+    };
+    city: string;
+    zip: string;
+    description: string;
+  };
+}
+
+export interface Route {
+  duration: number | null;
+  description: string;
+  timeFrom: string; //00:00:00
+  timeTo: string; //00:00:00
+  points: Point[];
+}
+export interface ExtraData {
+  code: string;
+  text: string;
+  required: boolean;
+}
 export interface Package {
-  extraDatas: any[];
+  extraDatas: ExtraData[];
   packageId: string;
   packageName: string;
   packageDetails: PackageDetail[];
   amountsFrom: AmountsFrom[];
   ticketValidity: any;
   duration: number | null;
+  routes: Route[];
   scheduling: {
     duration: number | null;
     closed: [] | null;
@@ -123,7 +152,6 @@ export interface AmountsFrom {
   priceName: string;
   amount: number;
   nettAmount: number;
-  boxOfficeAmount: number;
   amountDetails: AmountDetails;
 }
 
@@ -144,16 +172,16 @@ export interface OperationDate {
   date: string;
   day: string;
   operationDetails: OperationDetail[];
-  targetMarket: any[];
+  targetMarkets: { code: string; nationalities: { name: string; code: string }[] }[];
   amountFrom: AmountFrom2;
 }
 
 export interface OperationDetail {
-  showTime: any;
+  showTime: string | null; //00:00 or null
   allotment: Allotment;
   sellOnTime: any;
   paxAmounts: PaxAmount[];
-  requiredTargets: any[];
+  requiredTargets: { code: string; name: string }[]; //{code:"EUR",name:"Europe"}
   resourceData: ResourceData;
 }
 
@@ -165,10 +193,8 @@ export interface Allotment {
 export interface PaxAmount {
   paxType: string;
   amount: number;
-  requiredTarget: any;
-  targetMarkets: any[];
+  requiredTarget: { name: string; code: string }[];
   nettAmount: number;
-  boxOfficeAmount: number;
   minPurchaseQty: any;
   maxPurchaseQty: any;
   remaining: string;
@@ -200,7 +226,6 @@ export interface AmountFrom2 {
   paxType: string;
   amount: number;
   nettAmount: number;
-  boxOfficeAmount: number;
   minPurchaseQty: any;
   maxPurchaseQty: any;
   remaining: string;

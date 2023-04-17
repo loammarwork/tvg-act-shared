@@ -16,7 +16,8 @@ export type DescriptionMapperType =
   | 'Important Info'
   | 'Advanced Tips'
   | 'Redeem Info'
-  | 'Direct Entrance';
+  | 'Direct Entrance'
+  | 'Guiding Options';
 
 export const DescriptionMapper: Record<string, DescriptionMapperType> = {
   /* Extranet */
@@ -46,5 +47,6 @@ export const DescriptionMapper: Record<string, DescriptionMapperType> = {
   advancedTips: 'Advanced Tips',
   redeemInfo: 'Redeem Info',
   directEntrance: 'Direct Entrance',
+  guidingOptions: 'Guiding Options',
   /* HotelBeds */
 } as const;

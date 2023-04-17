@@ -38,7 +38,7 @@ export declare class ActivitySearchStandardResponseDTO {
     duration: number | null;
     segments: SegmentSearchStandardResponseDTO[];
     currency: string;
-    targetMarket: any[];
+    targetMarket: string[];
     amountFrom: AmountFromSearchStandardResponseDTO;
     images: ImageSearchStandardResponseDTO[];
     freeCancellation: freeCancellationSearchStandardResponseDTO;
