@@ -107,17 +107,17 @@ export interface ExtraData {
     required: boolean;
 }
 export interface Package {
-    extraDatas: ExtraData[];
     packageId: string;
     packageName: string;
     packageDetails: PackageDetail[];
+    extraDatas: ExtraData[];
     amountsFrom: AmountsFrom[];
-    ticketValidity: any;
-    opened: Opened2[];
+    duration: number | null;
     isFavorite: boolean;
-    redeemStart: any;
-    redeemEnd: any;
+    redeemStart: string | null;
+    redeemEnd: string | null;
     operationDates: OperationDate[];
+    ticketValidity: any;
 }
 export interface PackageDetail {
     title: string;
