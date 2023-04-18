@@ -1,5 +1,6 @@
 export declare class PreconfirmHolderStandardRequestBodyDTO {
     name: string;
+    middlename: string;
     surname: string;
     title: string;
     email: string;

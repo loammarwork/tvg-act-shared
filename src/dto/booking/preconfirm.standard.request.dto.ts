@@ -6,6 +6,9 @@ export class PreconfirmHolderStandardRequestBodyDTO {
   name: string;
 
   @IsString()
+  middlename: string;
+
+  @IsString()
   surname: string;
 
   @IsString()
