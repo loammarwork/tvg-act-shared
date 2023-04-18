@@ -31,7 +31,7 @@ export class ReconfirmActivityResponseDTO {
   cancellationPolicy: {
     cancelBefore: string; //iso date,
     freeCancellation: {
-      type: 'FREE.CANCELLATAION' | 'NON.REFUNDABLE' | 'CANCEL.CONDITION';
+      type: 'FREE.CANCELLATION' | 'NON.REFUNDABLE' | 'CANCEL.CONDITION';
       note: string;
     };
   };
