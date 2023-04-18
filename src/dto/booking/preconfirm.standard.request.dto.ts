@@ -1,5 +1,5 @@
 import { Type } from 'class-transformer';
-import { IsString, IsNotEmpty, IsISO8601, IsArray, IsOptional, IsNumber, IsObject, ValidateNested } from 'class-validator';
+import { IsString, IsISO8601, IsOptional, IsNumber, IsObject, ValidateNested } from 'class-validator';
 
 export class PreconfirmHolderStandardRequestBodyDTO {
   @IsString()

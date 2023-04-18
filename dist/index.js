@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SegmentMapper = exports.DescriptionMapper = exports.PreconfirmStandardRequestBodyDTO = exports.PreconfirmActivityStandardRequestBodyDTO = exports.PreconfirmPaxRequestBodyDTO = exports.PreconfirmPaxAmountRequestBodyDTO = exports.PreconfirmAnswerRequestBodyDTO = exports.PreconfirmQuestionRequestBodyDTO = exports.PreconfirmActivityDetailRequestBodyDTO = exports.PreconfirmHolderStandardRequestBodyDTO = exports.DetailStandardResponseDTO = exports.DetailStandardRequestBodyDTO = exports.SearchStandardResponseDTO = exports.SearchStandardRequestBodyDTO = void 0;
+exports.SegmentMapper = exports.DescriptionMapper = exports.CancelStandardRequestBodyDTO = exports.ReconfirmStandardRequestBodyDTO = exports.PreconfirmStandardRequestBodyDTO = exports.PreconfirmActivityStandardRequestBodyDTO = exports.PreconfirmPaxRequestBodyDTO = exports.PreconfirmPaxAmountRequestBodyDTO = exports.PreconfirmAnswerRequestBodyDTO = exports.PreconfirmQuestionRequestBodyDTO = exports.PreconfirmActivityDetailRequestBodyDTO = exports.PreconfirmHolderStandardRequestBodyDTO = exports.DetailStandardResponseDTO = exports.DetailStandardRequestBodyDTO = exports.SearchStandardResponseDTO = exports.SearchStandardRequestBodyDTO = void 0;
 var search_standard_request_dto_1 = require("./dto/search/search.standard.request.dto");
 Object.defineProperty(exports, "SearchStandardRequestBodyDTO", { enumerable: true, get: function () { return search_standard_request_dto_1.SearchStandardRequestBodyDTO; } });
 var search_standard_response_dto_1 = require("./dto/search/search.standard.response.dto");
@@ -25,6 +25,10 @@ var preconfirm_standard_request_dto_7 = require("./dto/booking/preconfirm.standa
 Object.defineProperty(exports, "PreconfirmActivityStandardRequestBodyDTO", { enumerable: true, get: function () { return preconfirm_standard_request_dto_7.PreconfirmActivityStandardRequestBodyDTO; } });
 var preconfirm_standard_request_dto_8 = require("./dto/booking/preconfirm.standard.request.dto");
 Object.defineProperty(exports, "PreconfirmStandardRequestBodyDTO", { enumerable: true, get: function () { return preconfirm_standard_request_dto_8.PreconfirmStandardRequestBodyDTO; } });
+var reconfirm_standard_request_dto_1 = require("./dto/booking/reconfirm.standard.request.dto");
+Object.defineProperty(exports, "ReconfirmStandardRequestBodyDTO", { enumerable: true, get: function () { return reconfirm_standard_request_dto_1.ReconfirmStandardRequestBodyDTO; } });
+var cancel_standard_request_dto_1 = require("./dto/booking/cancel.standard.request.dto");
+Object.defineProperty(exports, "CancelStandardRequestBodyDTO", { enumerable: true, get: function () { return cancel_standard_request_dto_1.CancelStandardRequestBodyDTO; } });
 var description_mapper_1 = require("./mapper/description.mapper");
 Object.defineProperty(exports, "DescriptionMapper", { enumerable: true, get: function () { return description_mapper_1.DescriptionMapper; } });
 var segment_mapper_1 = require("./mapper/segment.mapper");

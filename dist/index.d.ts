@@ -10,5 +10,7 @@ export { PreconfirmPaxAmountRequestBodyDTO } from './dto/booking/preconfirm.stan
 export { PreconfirmPaxRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
 export { PreconfirmActivityStandardRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
 export { PreconfirmStandardRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
+export { ReconfirmStandardRequestBodyDTO } from './dto/booking/reconfirm.standard.request.dto';
+export { CancelStandardRequestBodyDTO } from './dto/booking/cancel.standard.request.dto';
 export { DescriptionMapper } from './mapper/description.mapper';
 export { SegmentMapper } from './mapper/segment.mapper';
