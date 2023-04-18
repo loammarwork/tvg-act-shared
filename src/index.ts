@@ -9,22 +9,43 @@ export { DetailStandardResponseDTO } from './dto/detail/detail.standard.response
 // End detail
 
 //Start preconfirm
-export { PreconfirmHolderStandardRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmActivityDetailRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmQuestionRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmAnswerRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmPaxAmountRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmPaxRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmActivityStandardRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
-export { PreconfirmStandardRequestBodyDTO } from './dto/booking/preconfirm.standard.request.dto';
+export {
+  PreconfirmHolderStandardRequestBodyDTO,
+  PreconfirmActivityDetailRequestBodyDTO,
+  PreconfirmQuestionRequestBodyDTO,
+  PreconfirmAnswerRequestBodyDTO,
+  PreconfirmPaxAmountRequestBodyDTO,
+  PreconfirmPaxRequestBodyDTO,
+  PreconfirmActivityStandardRequestBodyDTO,
+  PreconfirmStandardRequestBodyDTO,
+} from './dto/booking/preconfirm.standard.request.dto';
+
+export {
+  PreconfirmStandardResponseDTO,
+  PreconfirmBookingHolder,
+  PreconfirmActivityResponseDTO,
+  PreconfirmDataStandardResponseDTO,
+} from './dto/booking/preconfirm.standard.response.dto';
 //End preconfirm
 
 //Start reconfirm
 export { ReconfirmStandardRequestBodyDTO } from './dto/booking/reconfirm.standard.request.dto';
+export {
+  ReconfirmActivityResponseDTO,
+  ReconfirmBookingHolder,
+  ReconfirmDataStandardResponseDTO,
+  ReconfirmStandardResponseDTO,
+} from './dto/booking/reconfirm.standard.response.dto';
 //End reconfirm
 
 //Start cancel
 export { CancelStandardRequestBodyDTO } from './dto/booking/cancel.standard.request.dto';
+export {
+  CancelActivityResponseDTO,
+  CancelBookingHolder,
+  CancelDataStandardResponseDTO,
+  CancelStandardResponseDTO,
+} from './dto/booking/cancel.standard.response.dto';
 //End cancel
 
 export { DescriptionMapper } from './mapper/description.mapper';

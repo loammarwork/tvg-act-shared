@@ -1,10 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ReconfirmStandardResponseDTO = exports.PreconfirmDataStandardResponseDTO = void 0;
+exports.PreconfirmStandardResponseDTO = exports.PreconfirmDataStandardResponseDTO = exports.PreconfirmBookingHolder = exports.PreconfirmActivityResponseDTO = void 0;
+class PreconfirmActivityResponseDTO {
+}
+exports.PreconfirmActivityResponseDTO = PreconfirmActivityResponseDTO;
+class PreconfirmBookingHolder {
+}
+exports.PreconfirmBookingHolder = PreconfirmBookingHolder;
 class PreconfirmDataStandardResponseDTO {
 }
 exports.PreconfirmDataStandardResponseDTO = PreconfirmDataStandardResponseDTO;
-class ReconfirmStandardResponseDTO {
+class PreconfirmStandardResponseDTO {
 }
-exports.ReconfirmStandardResponseDTO = ReconfirmStandardResponseDTO;
+exports.PreconfirmStandardResponseDTO = PreconfirmStandardResponseDTO;
 //# sourceMappingURL=preconfirm.standard.response.dto.js.map
