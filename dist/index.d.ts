@@ -10,3 +10,4 @@ export { CancelStandardRequestBodyDTO } from './dto/booking/cancel.standard.requ
 export { CancelActivityResponseDTO, CancelBookingHolder, CancelDataStandardResponseDTO, CancelStandardResponseDTO, } from './dto/booking/cancel.standard.response.dto';
 export { DescriptionMapper } from './mapper/description.mapper';
 export { SegmentMapper } from './mapper/segment.mapper';
+export { PaxType, PaxTypeMapper } from './mapper/pax-type.mapper';
