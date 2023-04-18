@@ -1,4 +1,4 @@
-export declare class DetailStandardRequestDTO {
+export declare class DetailStandardRequestBodyDTO {
     activityId: string;
     from: string;
     to: string;

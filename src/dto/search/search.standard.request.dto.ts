@@ -1,12 +1,12 @@
 import { Type } from 'class-transformer';
 import { IsString, IsNotEmpty, IsObject, ValidateNested, IsISO8601 } from 'class-validator';
 
-export class PaginationSearchStandardRequestDTO {
+export class PaginationSearchStandardRequestBodyDTO {
   itemsPerPage: number;
   page: number;
 }
 
-export class SearchStandardRequestDTO {
+export class SearchStandardRequestBodyDTO {
   @IsString()
   @IsNotEmpty()
   keyword: string;
@@ -25,6 +25,6 @@ export class SearchStandardRequestDTO {
 
   @IsObject()
   @ValidateNested({ each: true })
-  @Type(() => PaginationSearchStandardRequestDTO)
-  pagination: PaginationSearchStandardRequestDTO;
+  @Type(() => PaginationSearchStandardRequestBodyDTO)
+  pagination: PaginationSearchStandardRequestBodyDTO;
 }

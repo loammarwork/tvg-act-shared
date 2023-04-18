@@ -9,29 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DetailStandardRequestDTO = void 0;
+exports.DetailStandardRequestBodyDTO = void 0;
 const class_validator_1 = require("class-validator");
-class DetailStandardRequestDTO {
+class DetailStandardRequestBodyDTO {
 }
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], DetailStandardRequestDTO.prototype, "activityId", void 0);
+], DetailStandardRequestBodyDTO.prototype, "activityId", void 0);
 __decorate([
     (0, class_validator_1.IsISO8601)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], DetailStandardRequestDTO.prototype, "from", void 0);
+], DetailStandardRequestBodyDTO.prototype, "from", void 0);
 __decorate([
     (0, class_validator_1.IsISO8601)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], DetailStandardRequestDTO.prototype, "to", void 0);
+], DetailStandardRequestBodyDTO.prototype, "to", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], DetailStandardRequestDTO.prototype, "language", void 0);
-exports.DetailStandardRequestDTO = DetailStandardRequestDTO;
+], DetailStandardRequestBodyDTO.prototype, "language", void 0);
+exports.DetailStandardRequestBodyDTO = DetailStandardRequestBodyDTO;
 //# sourceMappingURL=detail.standard.request.dto.js.map

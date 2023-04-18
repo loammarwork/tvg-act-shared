@@ -9,39 +9,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SearchStandardRequestDTO = exports.PaginationSearchStandardRequestDTO = void 0;
+exports.SearchStandardRequestBodyDTO = exports.PaginationSearchStandardRequestBodyDTO = void 0;
 const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
-class PaginationSearchStandardRequestDTO {
+class PaginationSearchStandardRequestBodyDTO {
 }
-exports.PaginationSearchStandardRequestDTO = PaginationSearchStandardRequestDTO;
-class SearchStandardRequestDTO {
+exports.PaginationSearchStandardRequestBodyDTO = PaginationSearchStandardRequestBodyDTO;
+class SearchStandardRequestBodyDTO {
 }
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], SearchStandardRequestDTO.prototype, "keyword", void 0);
+], SearchStandardRequestBodyDTO.prototype, "keyword", void 0);
 __decorate([
     (0, class_validator_1.IsISO8601)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], SearchStandardRequestDTO.prototype, "from", void 0);
+], SearchStandardRequestBodyDTO.prototype, "from", void 0);
 __decorate([
     (0, class_validator_1.IsISO8601)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], SearchStandardRequestDTO.prototype, "to", void 0);
+], SearchStandardRequestBodyDTO.prototype, "to", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], SearchStandardRequestDTO.prototype, "language", void 0);
+], SearchStandardRequestBodyDTO.prototype, "language", void 0);
 __decorate([
     (0, class_validator_1.IsObject)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => PaginationSearchStandardRequestDTO),
-    __metadata("design:type", PaginationSearchStandardRequestDTO)
-], SearchStandardRequestDTO.prototype, "pagination", void 0);
-exports.SearchStandardRequestDTO = SearchStandardRequestDTO;
+    (0, class_transformer_1.Type)(() => PaginationSearchStandardRequestBodyDTO),
+    __metadata("design:type", PaginationSearchStandardRequestBodyDTO)
+], SearchStandardRequestBodyDTO.prototype, "pagination", void 0);
+exports.SearchStandardRequestBodyDTO = SearchStandardRequestBodyDTO;
 //# sourceMappingURL=search.standard.request.dto.js.map

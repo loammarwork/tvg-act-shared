@@ -1,6 +1,6 @@
 import { IsString, IsNotEmpty, IsISO8601 } from 'class-validator';
 
-export class DetailStandardRequestDTO {
+export class DetailStandardRequestBodyDTO {
   @IsString()
   @IsNotEmpty()
   activityId: string;

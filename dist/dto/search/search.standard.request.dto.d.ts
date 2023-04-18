@@ -1,11 +1,11 @@
-export declare class PaginationSearchStandardRequestDTO {
+export declare class PaginationSearchStandardRequestBodyDTO {
     itemsPerPage: number;
     page: number;
 }
-export declare class SearchStandardRequestDTO {
+export declare class SearchStandardRequestBodyDTO {
     keyword: string;
     from: string;
     to: string;
     language: string;
-    pagination: PaginationSearchStandardRequestDTO;
+    pagination: PaginationSearchStandardRequestBodyDTO;
 }
