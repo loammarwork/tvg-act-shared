@@ -26,7 +26,7 @@ export declare class PreconfirmPaxAmountRequestBodyDTO {
     nettAmount: number;
     minPurchaseQty: number | null;
     maxPurchaseQty: number | null;
-    amountDetails: object | null;
+    amountDetails: any;
 }
 export declare class PreconfirmPaxRequestBodyDTO {
     name: string;

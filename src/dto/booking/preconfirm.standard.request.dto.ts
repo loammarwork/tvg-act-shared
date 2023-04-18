@@ -66,7 +66,7 @@ export class PreconfirmPaxAmountRequestBodyDTO {
   maxPurchaseQty: number | null;
   @IsObject()
   @IsOptional()
-  amountDetails: object | null;
+  amountDetails: any;
 }
 export class PreconfirmPaxRequestBodyDTO {
   @IsString()
