@@ -39,8 +39,7 @@ __decorate([
     __metadata("design:type", String)
 ], PreconfirmHolderStandardRequestBodyDTO.prototype, "zipCode", void 0);
 __decorate([
-    (0, class_validator_1.IsArray)(),
-    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], PreconfirmHolderStandardRequestBodyDTO.prototype, "phones", void 0);
 __decorate([

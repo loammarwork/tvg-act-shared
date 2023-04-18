@@ -20,8 +20,7 @@ export class PreconfirmHolderStandardRequestBodyDTO {
   @IsString()
   zipCode: string;
 
-  @IsArray()
-  @IsString()
+  @IsString({ each: true })
   phones: string[];
 
   @IsString()
