@@ -1,5 +1,5 @@
 import { Type } from 'class-transformer';
-import { IsString, IsISO8601, IsOptional, IsNumber, IsObject, ValidateNested } from 'class-validator';
+import { IsString, IsISO8601, IsOptional, IsNumber, IsObject, ValidateNested, IsArray, ArrayMinSize } from 'class-validator';
 
 export class PreconfirmHolderStandardRequestBodyDTO {
   @IsString()
@@ -20,6 +20,7 @@ export class PreconfirmHolderStandardRequestBodyDTO {
   @IsString()
   zipCode: string;
 
+  @IsArray()
   @IsString({ each: true })
   phones: string[];
 
@@ -88,13 +89,16 @@ export class PreconfirmActivityStandardRequestBodyDTO {
   @IsISO8601()
   serviceDate: string;
   activityDetail: PreconfirmActivityDetailRequestBodyDTO;
+  @IsArray()
   @ValidateNested({ each: true })
   @Type(() => PreconfirmAnswerRequestBodyDTO)
   @IsOptional()
   answers?: (PreconfirmAnswerRequestBodyDTO | null)[];
-  @ValidateNested()
+  @IsArray()
+  @ValidateNested({ each: true })
+  @ArrayMinSize(1)
   @Type(() => PreconfirmPaxRequestBodyDTO)
-  paxes: PreconfirmPaxRequestBodyDTO;
+  paxes: PreconfirmPaxRequestBodyDTO[];
 }
 
 export class PreconfirmStandardRequestBodyDTO {
@@ -103,7 +107,9 @@ export class PreconfirmStandardRequestBodyDTO {
   @ValidateNested()
   @Type(() => PreconfirmHolderStandardRequestBodyDTO)
   bookingHolder: PreconfirmHolderStandardRequestBodyDTO;
+  @IsArray()
   @ValidateNested({ each: true })
+  @ArrayMinSize(1)
   @Type(() => PreconfirmActivityStandardRequestBodyDTO)
   activities: PreconfirmActivityStandardRequestBodyDTO[];
 }

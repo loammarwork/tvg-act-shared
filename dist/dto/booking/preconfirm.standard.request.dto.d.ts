@@ -41,7 +41,7 @@ export declare class PreconfirmActivityStandardRequestBodyDTO {
     serviceDate: string;
     activityDetail: PreconfirmActivityDetailRequestBodyDTO;
     answers?: (PreconfirmAnswerRequestBodyDTO | null)[];
-    paxes: PreconfirmPaxRequestBodyDTO;
+    paxes: PreconfirmPaxRequestBodyDTO[];
 }
 export declare class PreconfirmStandardRequestBodyDTO {
     bookingRef: string;

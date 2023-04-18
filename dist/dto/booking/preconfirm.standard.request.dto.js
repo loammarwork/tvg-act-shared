@@ -39,6 +39,7 @@ __decorate([
     __metadata("design:type", String)
 ], PreconfirmHolderStandardRequestBodyDTO.prototype, "zipCode", void 0);
 __decorate([
+    (0, class_validator_1.IsArray)(),
     (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], PreconfirmHolderStandardRequestBodyDTO.prototype, "phones", void 0);
@@ -151,15 +152,18 @@ __decorate([
     __metadata("design:type", String)
 ], PreconfirmActivityStandardRequestBodyDTO.prototype, "serviceDate", void 0);
 __decorate([
+    (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
     (0, class_transformer_1.Type)(() => PreconfirmAnswerRequestBodyDTO),
     (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Array)
 ], PreconfirmActivityStandardRequestBodyDTO.prototype, "answers", void 0);
 __decorate([
-    (0, class_validator_1.ValidateNested)(),
+    (0, class_validator_1.IsArray)(),
+    (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_validator_1.ArrayMinSize)(1),
     (0, class_transformer_1.Type)(() => PreconfirmPaxRequestBodyDTO),
-    __metadata("design:type", PreconfirmPaxRequestBodyDTO)
+    __metadata("design:type", Array)
 ], PreconfirmActivityStandardRequestBodyDTO.prototype, "paxes", void 0);
 exports.PreconfirmActivityStandardRequestBodyDTO = PreconfirmActivityStandardRequestBodyDTO;
 class PreconfirmStandardRequestBodyDTO {
@@ -174,7 +178,9 @@ __decorate([
     __metadata("design:type", PreconfirmHolderStandardRequestBodyDTO)
 ], PreconfirmStandardRequestBodyDTO.prototype, "bookingHolder", void 0);
 __decorate([
+    (0, class_validator_1.IsArray)(),
     (0, class_validator_1.ValidateNested)({ each: true }),
+    (0, class_validator_1.ArrayMinSize)(1),
     (0, class_transformer_1.Type)(() => PreconfirmActivityStandardRequestBodyDTO),
     __metadata("design:type", Array)
 ], PreconfirmStandardRequestBodyDTO.prototype, "activities", void 0);
