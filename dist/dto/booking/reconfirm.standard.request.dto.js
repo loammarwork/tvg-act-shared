@@ -17,6 +17,6 @@ __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], ReconfirmStandardRequestBodyDTO.prototype, "reference", void 0);
+], ReconfirmStandardRequestBodyDTO.prototype, "bookingReference", void 0);
 exports.ReconfirmStandardRequestBodyDTO = ReconfirmStandardRequestBodyDTO;
 //# sourceMappingURL=reconfirm.standard.request.dto.js.map

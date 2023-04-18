@@ -1,3 +1,3 @@
 export declare class ReconfirmStandardRequestBodyDTO {
-    reference: string;
+    bookingReference: string;
 }

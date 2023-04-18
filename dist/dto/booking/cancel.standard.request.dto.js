@@ -17,6 +17,6 @@ __decorate([
     (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
-], CancelStandardRequestBodyDTO.prototype, "reference", void 0);
+], CancelStandardRequestBodyDTO.prototype, "bookingReference", void 0);
 exports.CancelStandardRequestBodyDTO = CancelStandardRequestBodyDTO;
 //# sourceMappingURL=cancel.standard.request.dto.js.map
