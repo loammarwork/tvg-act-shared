@@ -85,6 +85,7 @@ export class PreconfirmPaxRequestBodyDTO {
   paxAmount: PreconfirmPaxAmountRequestBodyDTO;
 }
 export class PreconfirmActivityStandardRequestBodyDTO {
+  @IsISO8601()
   serviceDate: string;
   activityDetail: PreconfirmActivityDetailRequestBodyDTO;
   @ValidateNested({ each: true })
@@ -103,6 +104,6 @@ export class PreconfirmStandardRequestBodyDTO {
   @Type(() => PreconfirmHolderStandardRequestBodyDTO)
   bookingHolder: PreconfirmHolderStandardRequestBodyDTO;
   @ValidateNested({ each: true })
-  @Type(() => PreconfirmHolderStandardRequestBodyDTO)
+  @Type(() => PreconfirmActivityStandardRequestBodyDTO)
   activities: PreconfirmActivityStandardRequestBodyDTO[];
 }

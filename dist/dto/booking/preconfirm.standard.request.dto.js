@@ -147,6 +147,10 @@ exports.PreconfirmPaxRequestBodyDTO = PreconfirmPaxRequestBodyDTO;
 class PreconfirmActivityStandardRequestBodyDTO {
 }
 __decorate([
+    (0, class_validator_1.IsISO8601)(),
+    __metadata("design:type", String)
+], PreconfirmActivityStandardRequestBodyDTO.prototype, "serviceDate", void 0);
+__decorate([
     (0, class_validator_1.ValidateNested)({ each: true }),
     (0, class_transformer_1.Type)(() => PreconfirmAnswerRequestBodyDTO),
     (0, class_validator_1.IsOptional)(),
@@ -171,7 +175,7 @@ __decorate([
 ], PreconfirmStandardRequestBodyDTO.prototype, "bookingHolder", void 0);
 __decorate([
     (0, class_validator_1.ValidateNested)({ each: true }),
-    (0, class_transformer_1.Type)(() => PreconfirmHolderStandardRequestBodyDTO),
+    (0, class_transformer_1.Type)(() => PreconfirmActivityStandardRequestBodyDTO),
     __metadata("design:type", Array)
 ], PreconfirmStandardRequestBodyDTO.prototype, "activities", void 0);
 exports.PreconfirmStandardRequestBodyDTO = PreconfirmStandardRequestBodyDTO;
