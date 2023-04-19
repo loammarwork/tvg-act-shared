@@ -42,8 +42,9 @@ export declare class ActivitySearchStandardResponseDTO {
     amountFrom: AmountFromSearchStandardResponseDTO;
     images: ImageSearchStandardResponseDTO[];
     freeCancellation: freeCancellationSearchStandardResponseDTO;
-    openDated: boolean;
-    instantConfirmation: boolean;
+    isOpenDated: boolean;
+    isInstantConfirmation: boolean;
+    isBestSeller: boolean;
 }
 export declare class PaginationSearchStandardRequestDTO {
     itemsPerPage: number;
