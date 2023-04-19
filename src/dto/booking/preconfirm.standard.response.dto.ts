@@ -15,6 +15,7 @@ export class PreconfirmActivityResponseDTO {
     name: string;
     middlename: string;
     surname: string;
+    title: string;
     age: number;
     paxType: string;
     passport: string;
