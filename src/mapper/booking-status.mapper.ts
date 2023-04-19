@@ -8,4 +8,5 @@ export const BookingStatusMapper: Record<string, (typeof BookingStatus)[keyof ty
   FAILED: 'FAILED',
   PENDING: 'PRECONFIRMED',
   PAYMENT_PENDING: 'PRECONFIRMED',
+  REVOKED: 'CANCELED',
 };
