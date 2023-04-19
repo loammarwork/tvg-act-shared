@@ -140,7 +140,7 @@ __decorate([
     __metadata("design:type", String)
 ], PreconfirmPaxRequestBodyDTO.prototype, "email", void 0);
 __decorate([
-    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsString)({ each: true }),
     __metadata("design:type", Array)
 ], PreconfirmPaxRequestBodyDTO.prototype, "phones", void 0);
 __decorate([

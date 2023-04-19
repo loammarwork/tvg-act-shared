@@ -82,7 +82,7 @@ export class PreconfirmPaxRequestBodyDTO {
   title: string;
   @IsString()
   email: string;
-  @IsString()
+  @IsString({ each: true })
   phones: string[];
   @IsString()
   nationality: string;
