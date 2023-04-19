@@ -54,6 +54,7 @@ export declare class CancelBookingHolder {
     middlename: string;
     surname: string;
     title: string;
+    nationality: string;
     email: string;
     phones: string[];
 }

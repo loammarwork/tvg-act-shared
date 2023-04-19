@@ -62,6 +62,7 @@ export declare class PreconfirmBookingHolder {
     middlename: string;
     surname: string;
     title: string;
+    nationality: string;
     email: string;
     phones: string[];
 }
