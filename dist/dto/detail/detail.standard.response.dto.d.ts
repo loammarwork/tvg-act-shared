@@ -20,7 +20,6 @@ export interface Activity {
     images: Image[];
     isOpenDated: boolean;
     isBestSeller: boolean;
-    amountFrom: AmountFrom;
     packages: Package[];
 }
 export interface LocationDetail {

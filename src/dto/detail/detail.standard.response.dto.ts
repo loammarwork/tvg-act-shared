@@ -23,7 +23,6 @@ export interface Activity {
   //endcontent
   isOpenDated: boolean;
   isBestSeller: boolean;
-  amountFrom: AmountFrom;
   packages: Package[];
 }
 
