@@ -55,6 +55,10 @@ export interface GuidingOptions {
 }
 export interface Location {
     country: Country;
+    geolocation: {
+        latitude: number;
+        longitude: number;
+    } | null;
 }
 export interface Country {
     name: string;
