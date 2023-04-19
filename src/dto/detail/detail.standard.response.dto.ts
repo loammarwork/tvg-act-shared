@@ -104,7 +104,7 @@ export interface Segment {
 
 export interface FreeCancellation {
   type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-  note: string;
+  note: string[];
 }
 
 export interface ActivityDetail {
@@ -253,7 +253,7 @@ export interface CancellationPolicy {
 
 export interface FreeCancellation2 {
   type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-  note: string;
+  note: string[];
 }
 
 export interface AmountFrom2 {

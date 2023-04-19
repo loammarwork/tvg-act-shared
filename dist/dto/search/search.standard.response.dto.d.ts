@@ -16,7 +16,7 @@ export declare class ImageSearchStandardResponseDTO {
 }
 export declare class freeCancellationSearchStandardResponseDTO {
     type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-    note: string;
+    note: string[];
 }
 export declare class LocationSearchStandardResponseDTO {
     country: {

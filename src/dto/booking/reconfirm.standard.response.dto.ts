@@ -32,7 +32,7 @@ export class ReconfirmActivityResponseDTO {
     cancelBefore: string; //iso date,
     freeCancellation: {
       type: 'FREE.CANCELLATION' | 'NON.REFUNDABLE' | 'CANCEL.CONDITION';
-      note: string;
+      note: string[];
     };
   };
   amountDetail: {

@@ -20,7 +20,7 @@ export class ImageSearchStandardResponseDTO {
 
 export class freeCancellationSearchStandardResponseDTO {
   type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-  note: string;
+  note: string[];
 }
 
 // startingPoints -> Attraction,Meeting Point,HOTEL_PICKUP,Meeting Hotel Pickup,Hotel Pickup,MEETING_POINT
