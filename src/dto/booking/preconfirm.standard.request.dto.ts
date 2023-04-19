@@ -106,7 +106,7 @@ export class PreconfirmActivityStandardRequestBodyDTO {
 
 export class PreconfirmStandardRequestBodyDTO {
   @IsString()
-  bookingRef: string;
+  clientReference: string;
   @ValidateNested()
   @Type(() => PreconfirmHolderStandardRequestBodyDTO)
   bookingHolder: PreconfirmHolderStandardRequestBodyDTO;

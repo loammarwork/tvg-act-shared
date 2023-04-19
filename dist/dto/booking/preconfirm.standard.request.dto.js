@@ -175,7 +175,7 @@ class PreconfirmStandardRequestBodyDTO {
 __decorate([
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
-], PreconfirmStandardRequestBodyDTO.prototype, "bookingRef", void 0);
+], PreconfirmStandardRequestBodyDTO.prototype, "clientReference", void 0);
 __decorate([
     (0, class_validator_1.ValidateNested)(),
     (0, class_transformer_1.Type)(() => PreconfirmHolderStandardRequestBodyDTO),

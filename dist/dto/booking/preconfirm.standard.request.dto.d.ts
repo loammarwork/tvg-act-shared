@@ -45,7 +45,7 @@ export declare class PreconfirmActivityStandardRequestBodyDTO {
     paxes: PreconfirmPaxRequestBodyDTO[];
 }
 export declare class PreconfirmStandardRequestBodyDTO {
-    bookingRef: string;
+    clientReference: string;
     bookingHolder: PreconfirmHolderStandardRequestBodyDTO;
     activities: PreconfirmActivityStandardRequestBodyDTO[];
 }
