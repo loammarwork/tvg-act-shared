@@ -19,6 +19,7 @@ export declare class ReconfirmActivityResponseDTO {
         surname: string;
         title: string;
         age: number;
+        nationality: string;
         paxType: string;
         passport: string;
     }[];
