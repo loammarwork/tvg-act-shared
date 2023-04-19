@@ -48,11 +48,11 @@ export declare class PreconfirmActivityResponseDTO {
     };
     providerInformation: {
         name: string;
-    };
+    } | null;
     supplier: {
         name: string;
         vatNumber: string;
-    };
+    } | null;
 }
 export declare class PreconfirmBookingHolder {
     name: string;

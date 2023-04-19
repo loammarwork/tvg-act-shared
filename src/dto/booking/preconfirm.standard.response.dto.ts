@@ -46,11 +46,11 @@ export class PreconfirmActivityResponseDTO {
   };
   providerInformation: {
     name: string;
-  };
+  } | null;
   supplier: {
     name: string;
     vatNumber: string;
-  };
+  } | null;
 }
 
 export class PreconfirmBookingHolder {

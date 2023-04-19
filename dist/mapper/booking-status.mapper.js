@@ -7,5 +7,7 @@ exports.BookingStatusMapper = {
     CANCELLED: 'CANCELED',
     CANCELED: 'CANCELED',
     FAILED: 'FAILED',
+    PENDING: 'PRECONFIRMED',
+    PAYMENT_PENDING: 'PRECONFIRMED',
 };
 //# sourceMappingURL=booking-status.mapper.js.map
