@@ -51,6 +51,8 @@ export class ActivitySearchStandardResponseDTO {
   amountFrom: AmountFromSearchStandardResponseDTO;
   images: ImageSearchStandardResponseDTO[];
   freeCancellation: freeCancellationSearchStandardResponseDTO;
+  openDated: boolean;
+  instantConfirmation: boolean;
 }
 
 export class PaginationSearchStandardRequestDTO {
