@@ -17,6 +17,7 @@ export declare class CancelActivityResponseDTO {
         name: string;
         middlename: string;
         surname: string;
+        title: string;
         age: number;
         paxType: string;
         passport: string;

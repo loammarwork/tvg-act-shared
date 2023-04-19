@@ -15,6 +15,7 @@ export class ReconfirmActivityResponseDTO {
     name: string;
     middlename: string;
     surname: string;
+    title: string;
     age: number;
     paxType: string;
     passport: string;
