@@ -51,6 +51,7 @@ export class PreconfirmActivityResponseDTO {
     name: string;
     vatNumber: string;
   } | null;
+  files: string[];
 }
 
 export class PreconfirmBookingHolder {
