@@ -31,10 +31,11 @@ export declare class PreconfirmPaxAmountRequestBodyDTO {
 }
 export declare class PreconfirmPaxRequestBodyDTO {
     name: string;
+    middlename: string;
     surname: string;
     title: string;
     email: string;
-    phoneNo: string;
+    phones: string[];
     nationality: string;
     paxAmount: PreconfirmPaxAmountRequestBodyDTO;
 }

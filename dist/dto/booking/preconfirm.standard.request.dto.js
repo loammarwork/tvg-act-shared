@@ -126,6 +126,10 @@ __decorate([
 __decorate([
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
+], PreconfirmPaxRequestBodyDTO.prototype, "middlename", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
 ], PreconfirmPaxRequestBodyDTO.prototype, "surname", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
@@ -137,8 +141,8 @@ __decorate([
 ], PreconfirmPaxRequestBodyDTO.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], PreconfirmPaxRequestBodyDTO.prototype, "phoneNo", void 0);
+    __metadata("design:type", Array)
+], PreconfirmPaxRequestBodyDTO.prototype, "phones", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
     __metadata("design:type", String)

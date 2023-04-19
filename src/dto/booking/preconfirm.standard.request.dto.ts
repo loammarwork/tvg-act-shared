@@ -75,13 +75,15 @@ export class PreconfirmPaxRequestBodyDTO {
   @IsString()
   name: string;
   @IsString()
+  middlename: string;
+  @IsString()
   surname: string;
   @IsString()
   title: string;
   @IsString()
   email: string;
   @IsString()
-  phoneNo: string;
+  phones: string[];
   @IsString()
   nationality: string;
   @ValidateNested()
