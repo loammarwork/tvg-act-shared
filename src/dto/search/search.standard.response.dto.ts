@@ -1,3 +1,5 @@
+import { CancellationType } from '../../types/cancellation-type';
+
 export class SegmentSearchStandardResponseDTO {
   segmentName: string;
   segmentValues: string[];
@@ -19,7 +21,7 @@ export class ImageSearchStandardResponseDTO {
 }
 
 export class CancellationPolicy {
-  type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
+  type: CancellationType;
   note: string[];
 }
 

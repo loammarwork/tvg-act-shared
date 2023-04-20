@@ -1,3 +1,4 @@
+import { CancellationType, RefundType } from '../../types/cancellation-type';
 export declare class DetailStandardResponseDTO {
     success: boolean;
     identifier: string;
@@ -235,10 +236,10 @@ export interface ResourceData {
     cancellationPolicies: CancellationPolicy[];
 }
 export interface CancellationPolicy {
-    type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-    cancelBefore: string;
+    type: CancellationType;
+    cancelBefore: string | null;
     refund: {
-        type: 'PERCENT' | 'AMOUNT';
+        type: RefundType;
         value: number;
     };
     note: string[];

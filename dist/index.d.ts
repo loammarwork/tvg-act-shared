@@ -12,3 +12,4 @@ export { DescriptionMapper } from './mapper/description.mapper';
 export { SegmentMapper } from './mapper/segment.mapper';
 export { PaxType, PaxTypeMapper } from './mapper/pax-type.mapper';
 export { BookingStatusMapper } from './mapper/booking-status.mapper';
+export { CancellationType, RefundType } from './types/cancellation-type';
