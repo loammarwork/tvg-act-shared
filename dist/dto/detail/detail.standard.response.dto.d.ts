@@ -12,7 +12,7 @@ export interface Activity {
     segments: Segment[];
     currency: string;
     termsAndConditions: any[];
-    freeCancellation: FreeCancellation;
+    cancellationPolicy: CancellationTitlePolicy;
     activityDetails: ActivityDetail[];
     scheduling: Scheduling;
     routes: Route[];
@@ -96,7 +96,7 @@ export interface Segment {
     segmentName: string;
     segmentValues: string[];
 }
-export interface FreeCancellation {
+export interface CancellationTitlePolicy {
     type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
     note: string[];
 }
@@ -232,14 +232,15 @@ export interface AmountDetails2 {
 }
 export interface ResourceData {
     rateKey: string;
-    cancellationPolicy: CancellationPolicy;
+    cancellationPolicies: CancellationPolicy[];
 }
 export interface CancellationPolicy {
-    cancelBefore: string;
-    freeCancellation: FreeCancellation2;
-}
-export interface FreeCancellation2 {
     type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
+    cancelBefore: string;
+    refund: {
+        type: 'PERCENT' | 'AMOUNT';
+        value: number;
+    };
     note: string[];
 }
 export interface AmountFrom2 {
