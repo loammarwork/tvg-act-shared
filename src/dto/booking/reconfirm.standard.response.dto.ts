@@ -1,5 +1,14 @@
 import { BookingStatusType } from '../../types/booking-status.type';
-
+import { CancellationType, RefundType } from '../../types/cancellation-type';
+export interface CancellationPolicy {
+  type: CancellationType;
+  cancelBefore: string | null; //iso date
+  refund: {
+    type: RefundType;
+    value: number;
+  };
+  notes: string[]; //refundDuration
+}
 export class ReconfirmActivityResponseDTO {
   status: BookingStatusType;
   activityReference: string;
@@ -30,13 +39,7 @@ export class ReconfirmActivityResponseDTO {
   }[];
   dateFrom: string; //iso date
   dateTo: string; //iso date
-  cancellationPolicy: {
-    cancelBefore: string; //iso date,
-    freeCancellation: {
-      type: 'FREE.CANCELLATION' | 'NON.REFUNDABLE' | 'CANCEL.CONDITION';
-      note: string[];
-    };
-  };
+  cancellationPolicies: CancellationPolicy[];
   amountDetail: {
     paxAmounts: {
       paxType: string;
