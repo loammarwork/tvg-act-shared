@@ -251,7 +251,7 @@ export interface ResourceData {
 
 export interface CancellationPolicy {
   type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-  cancelBefore: string; //iso date
+  cancelBefore: string | null; //iso date
   refund: {
     type: 'PERCENT' | 'AMOUNT';
     value: number;
