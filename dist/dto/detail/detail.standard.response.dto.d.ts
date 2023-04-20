@@ -99,7 +99,7 @@ export interface Segment {
 }
 export interface CancellationTitlePolicy {
     type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
-    note: string[];
+    notes: string[];
 }
 export interface ActivityDetail {
     title: string;
@@ -242,7 +242,7 @@ export interface CancellationPolicy {
         type: RefundType;
         value: number;
     };
-    note: string[];
+    notes: string[];
 }
 export interface AmountFrom2 {
     paxType: string;

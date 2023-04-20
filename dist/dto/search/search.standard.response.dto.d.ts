@@ -17,7 +17,7 @@ export declare class ImageSearchStandardResponseDTO {
 }
 export declare class CancellationPolicy {
     type: CancellationType;
-    note: string[];
+    notes: string[];
 }
 export declare class LocationSearchStandardResponseDTO {
     country: {

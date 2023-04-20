@@ -7,7 +7,7 @@ export interface CancellationPolicy {
     type: RefundType;
     value: number;
   };
-  note: string[]; //refundDuration
+  notes: string[]; //refundDuration
 }
 export class PreconfirmActivityResponseDTO {
   status: BookingStatusType;

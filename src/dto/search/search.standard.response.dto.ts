@@ -22,7 +22,7 @@ export class ImageSearchStandardResponseDTO {
 
 export class CancellationPolicy {
   type: CancellationType;
-  note: string[];
+  notes: string[];
 }
 
 // startingPoints -> Attraction,Meeting Point,HOTEL_PICKUP,Meeting Hotel Pickup,Hotel Pickup,MEETING_POINT
