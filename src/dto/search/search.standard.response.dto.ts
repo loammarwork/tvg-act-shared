@@ -18,7 +18,7 @@ export class ImageSearchStandardResponseDTO {
   urls: UrlImageSearchStandardResponseDTO[];
 }
 
-export class freeCancellationSearchStandardResponseDTO {
+export class CancellationPolicy {
   type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
   note: string[];
 }
@@ -50,7 +50,7 @@ export class ActivitySearchStandardResponseDTO {
   targetMarket: string[]; //['EUR','THA']
   amountFrom: AmountFromSearchStandardResponseDTO;
   images: ImageSearchStandardResponseDTO[];
-  freeCancellation: freeCancellationSearchStandardResponseDTO;
+  cancellationPolicy: CancellationPolicy;
   isOpenDated: boolean;
   isInstantConfirmation: boolean;
   isBestSeller: boolean;
