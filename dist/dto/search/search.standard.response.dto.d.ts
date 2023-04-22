@@ -19,25 +19,16 @@ export declare class CancellationPolicy {
     type: CancellationType;
     notes: string[];
 }
-export declare class LocationSearchStandardResponseDTO {
-    country: {
-        name: string;
-        destination: {
-            name: string;
-        };
-    };
-    geolocation: {
-        latitude: number;
-        longitude: number;
-    } | null;
-}
 export declare class ActivitySearchStandardResponseDTO {
     activityId: string;
     activityName: string;
     activityType: string;
-    location: LocationSearchStandardResponseDTO;
+    country: string;
+    destination: string;
+    latitude: number;
+    longitude: number;
     duration: number | null;
-    segments: SegmentSearchStandardResponseDTO[];
+    categories: string[];
     currency: string;
     targetMarket: string[];
     amountFrom: AmountFromSearchStandardResponseDTO;

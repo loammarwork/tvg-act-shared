@@ -27,27 +27,17 @@ export class CancellationPolicy {
 
 // startingPoints -> Attraction,Meeting Point,HOTEL_PICKUP,Meeting Hotel Pickup,Hotel Pickup,MEETING_POINT
 // meetingPoint ->  LANDMARK, ADDRESS, OTHER
-export class LocationSearchStandardResponseDTO {
-  country: {
-    // สำหรับ HotelBeds เอาจากด้านบนสุดเพราะมีเสมอ
-    name: string;
-    destination: {
-      name: string;
-    };
-  };
-  geolocation: {
-    latitude: number;
-    longitude: number;
-  } | null;
-}
 
 export class ActivitySearchStandardResponseDTO {
   activityId: string;
   activityName: string;
   activityType: string;
-  location: LocationSearchStandardResponseDTO;
+  country: string;
+  destination: string;
+  latitude: number;
+  longitude: number;
   duration: number | null;
-  segments: SegmentSearchStandardResponseDTO[];
+  categories: string[];
   currency: string;
   targetMarket: string[]; //['EUR','THA']
   amountFrom: AmountFromSearchStandardResponseDTO;
