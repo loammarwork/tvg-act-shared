@@ -60,6 +60,7 @@ exports.ERPCategoryMapperCode = {
     '3+ Days': 'Other',
 };
 exports.SegmentMapper = {
+    ['Events']: ['Other'],
     ['Attraction']: ['Attractions & Tickets'],
     ['Tours']: ['Tours & Sightseeing'],
     ['F&B']: ['Food & Drink'],
