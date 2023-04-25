@@ -175,6 +175,7 @@ export interface AmountsFrom {
     amountDetails: AmountDetails;
 }
 export interface AmountDetails {
+    priceId: string;
     paxType: string;
     ageFrom: number;
     ageTo: number;
@@ -255,6 +256,7 @@ export interface AmountFrom2 {
     amountDetails: AmountDetails3;
 }
 export interface AmountDetails3 {
+    priceId: string;
     paxType: string;
     ageFrom: number;
     ageTo: number;
