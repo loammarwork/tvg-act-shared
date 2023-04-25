@@ -61,7 +61,7 @@ exports.ERPCategoryMapperCode = {
 };
 exports.SegmentMapper = {
     ['Events']: ['Other'],
-    ['Wellness']: ['Other'],
+    ['Wellness']: ['Relax Spa & Beauty'],
     ['Attraction']: ['Attractions & Tickets'],
     ['Tours']: ['Tours & Sightseeing'],
     ['F&B']: ['Food & Drink'],

@@ -227,6 +227,7 @@ export interface PaxAmount {
     amountDetails: AmountDetails2;
 }
 export interface AmountDetails2 {
+    priceId: string;
     paxType: string;
     ageFrom: number;
     ageTo: number;

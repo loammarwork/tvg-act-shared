@@ -241,6 +241,7 @@ export interface PaxAmount {
 }
 
 export interface AmountDetails2 {
+  priceId: string;
   paxType: string;
   ageFrom: number;
   ageTo: number;

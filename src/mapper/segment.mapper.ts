@@ -68,7 +68,7 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   //GlobalTix
   //['Entertainment']: ['Workshop Activities'],
   ['Events']: ['Other'],
-  ['Wellness']: ['Other'],
+  ['Wellness']: ['Relax Spa & Beauty'],
   ['Attraction']: ['Attractions & Tickets'],
   ['Tours']: ['Tours & Sightseeing'],
   ['F&B']: ['Food & Drink'],
