@@ -28,5 +28,10 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], DetailStandardRequestBodyDTO.prototype, "to", void 0);
+__decorate([
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], DetailStandardRequestBodyDTO.prototype, "language", void 0);
 exports.DetailStandardRequestBodyDTO = DetailStandardRequestBodyDTO;
 //# sourceMappingURL=detail.standard.request.dto.js.map

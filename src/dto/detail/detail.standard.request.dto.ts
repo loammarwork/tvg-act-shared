@@ -12,4 +12,8 @@ export class DetailStandardRequestBodyDTO {
   @IsISO8601()
   @IsNotEmpty()
   to: string;
+
+  @IsString()
+  @IsNotEmpty()
+  language: string;
 }
