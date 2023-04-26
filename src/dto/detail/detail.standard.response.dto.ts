@@ -26,13 +26,13 @@ export interface Activity {
   currency: string;
   termsAndConditions: string[];
   cancellationPolicy: CancellationTitlePolicy;
-  //content
+  //content detail
   activityDetails: ActivityDetail[];
   scheduling: Scheduling;
   routes: Route[];
   guidingOptions: GuidingOptions;
   images: Image[];
-  //endcontent
+  //endcontent detail
   isOpenDated: boolean;
   isInstantConfirmation: boolean;
   isBestSeller: boolean;
