@@ -6,15 +6,25 @@ export class DetailStandardResponseDTO {
   data: Activity;
 }
 
+export class Activitys {
+  activityId: string;
+  activityName: string;
+  activityType: string;
+  location: string;
+}
+
 export interface Activity {
   activityId: string;
   activityName: string;
   activityType: string;
+  country: string;
+  destination: string;
+  latitude: number;
+  longitude: number;
   location: Location;
-  locationDetail: LocationDetail;
-  segments: Segment[];
+  categories: string[];
   currency: string;
-  termsAndConditions: any[];
+  termsAndConditions: string[];
   cancellationPolicy: CancellationTitlePolicy;
   //content
   activityDetails: ActivityDetail[];
@@ -24,11 +34,12 @@ export interface Activity {
   images: Image[];
   //endcontent
   isOpenDated: boolean;
+  isInstantConfirmation: boolean;
   isBestSeller: boolean;
   packages: Package[];
 }
 
-export interface LocationDetail {
+export interface Location {
   endPoints: EndPoint[];
   startingPoints: StartingPoint[];
 }
@@ -56,13 +67,6 @@ export interface GuidingOptions {
   groupType?: string; //"SHARED","PRIVATE"
   tips?: string; //"EXCLUDED"
   maxGroupSize?: number;
-}
-export interface Location {
-  country: Country;
-  geolocation: {
-    latitude: number;
-    longitude: number;
-  } | null;
 }
 
 export interface Country {
@@ -100,11 +104,6 @@ export interface Opened {
 
 export interface Closed {
   weekDays: string[];
-}
-
-export interface Segment {
-  segmentName: string;
-  segmentValues: string[];
 }
 
 export interface CancellationTitlePolicy {

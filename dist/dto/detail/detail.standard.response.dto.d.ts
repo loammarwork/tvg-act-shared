@@ -4,15 +4,24 @@ export declare class DetailStandardResponseDTO {
     identifier: string;
     data: Activity;
 }
+export declare class Activitys {
+    activityId: string;
+    activityName: string;
+    activityType: string;
+    location: string;
+}
 export interface Activity {
     activityId: string;
     activityName: string;
     activityType: string;
+    country: string;
+    destination: string;
+    latitude: number;
+    longitude: number;
     location: Location;
-    locationDetail: LocationDetail;
-    segments: Segment[];
+    categories: string[];
     currency: string;
-    termsAndConditions: any[];
+    termsAndConditions: string[];
     cancellationPolicy: CancellationTitlePolicy;
     activityDetails: ActivityDetail[];
     scheduling: Scheduling;
@@ -20,10 +29,11 @@ export interface Activity {
     guidingOptions: GuidingOptions;
     images: Image[];
     isOpenDated: boolean;
+    isInstantConfirmation: boolean;
     isBestSeller: boolean;
     packages: Package[];
 }
-export interface LocationDetail {
+export interface Location {
     endPoints: EndPoint[];
     startingPoints: StartingPoint[];
 }
@@ -52,13 +62,6 @@ export interface GuidingOptions {
     groupType?: string;
     tips?: string;
     maxGroupSize?: number;
-}
-export interface Location {
-    country: Country;
-    geolocation: {
-        latitude: number;
-        longitude: number;
-    } | null;
 }
 export interface Country {
     name: string;
@@ -92,10 +95,6 @@ export interface Opened {
 }
 export interface Closed {
     weekDays: string[];
-}
-export interface Segment {
-    segmentName: string;
-    segmentValues: string[];
 }
 export interface CancellationTitlePolicy {
     type: 'FREE.CANCELLATION' | 'CANCEL.CONDITION' | 'NON.REFUNDABLE';
