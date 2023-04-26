@@ -93,6 +93,8 @@ export class PreconfirmPaxRequestBodyDTO {
 export class PreconfirmActivityStandardRequestBodyDTO {
   @IsISO8601()
   serviceDate: string;
+  @ValidateNested()
+  @Type(() => PreconfirmActivityDetailRequestBodyDTO)
   activityDetail: PreconfirmActivityDetailRequestBodyDTO;
   @IsArray()
   @ValidateNested({ each: true })
