@@ -5,9 +5,33 @@ export const BookingStatus = {
   CONFIRMED_SUCCESS: 'CONFIRMED',
   CONFIRMED_FAILED: 'CONFIRM_FAILED',
   CONFIRM_EXPIRED: 'CONFIRMATION_EXPIRED',
-  PAYMENT_EXPIRED: 'PAYMENT_EXPIRED',
   VENDOR_REFUSED: 'VENDOR_REFUSED',
   CANCELLED: 'CANCELLED',
 } as const;
+
+export enum BookingStatusCode {
+  HOLD = 7,
+  PRECONFIRMED_SUCCESS = 4,
+  PRECONFIRMED_FAILED = 5,
+  CONFIRMED_SUCCESS = 0,
+  CONFIRMED_FAILED = 1,
+  CONFIRM_EXPIRED = 3,
+  VENDOR_REFUSED = 8,
+  CANCELLED = 6,
+}
+
+export const PaymentStatus = {
+  PAYMENT_PENDING: 'PENDING',
+  PAYMENT_SUCCESS: 'SUCCESS',
+  PAYMENT_EXPIRED: 'EXPIRED',
+  PAYMENT_FAILED: 'FAILED',
+};
+
+export enum PaymentStatusCode {
+  PAYMENT_PENDING = '2',
+  PAYMENT_SUCCESS = '0',
+  PAYMENT_EXPIRED = '3',
+  PAYMENT_FAILED = '1',
+}
 
 export type BookingStatusType = (typeof BookingStatus)[keyof typeof BookingStatus];
