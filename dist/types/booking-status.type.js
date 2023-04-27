@@ -1,16 +1,17 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PaymentStatusCode = exports.PaymentStatus = exports.BookingStatusCode = exports.BookingStatus = void 0;
-exports.BookingStatus = {
-    HOLD: 'VENDOR_CONFIRMATION',
-    PRECONFIRMED_SUCCESS: 'PRECONFIRMED',
-    PRECONFIRMED_FAILED: 'PRECONFIRM_FAILED',
-    CONFIRMED_SUCCESS: 'CONFIRMED',
-    CONFIRMED_FAILED: 'CONFIRM_FAILED',
-    CONFIRM_EXPIRED: 'CONFIRMATION_EXPIRED',
-    VENDOR_REFUSED: 'VENDOR_REFUSED',
-    CANCELLED: 'CANCELLED',
-};
+var BookingStatus;
+(function (BookingStatus) {
+    BookingStatus["HOLD"] = "VENDOR_CONFIRMATION";
+    BookingStatus["PRECONFIRMED_SUCCESS"] = "PRECONFIRMED";
+    BookingStatus["PRECONFIRMED_FAILED"] = "PRECONFIRM_FAILED";
+    BookingStatus["CONFIRMED_SUCCESS"] = "CONFIRMED";
+    BookingStatus["CONFIRMED_FAILED"] = "CONFIRM_FAILED";
+    BookingStatus["CONFIRM_EXPIRED"] = "CONFIRMATION_EXPIRED";
+    BookingStatus["VENDOR_REFUSED"] = "VENDOR_REFUSED";
+    BookingStatus["CANCELLED"] = "CANCELLED";
+})(BookingStatus = exports.BookingStatus || (exports.BookingStatus = {}));
 var BookingStatusCode;
 (function (BookingStatusCode) {
     BookingStatusCode[BookingStatusCode["HOLD"] = 7] = "HOLD";
@@ -22,12 +23,13 @@ var BookingStatusCode;
     BookingStatusCode[BookingStatusCode["VENDOR_REFUSED"] = 8] = "VENDOR_REFUSED";
     BookingStatusCode[BookingStatusCode["CANCELLED"] = 6] = "CANCELLED";
 })(BookingStatusCode = exports.BookingStatusCode || (exports.BookingStatusCode = {}));
-exports.PaymentStatus = {
-    PAYMENT_PENDING: 'PENDING',
-    PAYMENT_SUCCESS: 'SUCCESS',
-    PAYMENT_EXPIRED: 'EXPIRED',
-    PAYMENT_FAILED: 'FAILED',
-};
+var PaymentStatus;
+(function (PaymentStatus) {
+    PaymentStatus["PAYMENT_PENDING"] = "PENDING";
+    PaymentStatus["PAYMENT_SUCCESS"] = "SUCCESS";
+    PaymentStatus["PAYMENT_EXPIRED"] = "EXPIRED";
+    PaymentStatus["PAYMENT_FAILED"] = "FAILED";
+})(PaymentStatus = exports.PaymentStatus || (exports.PaymentStatus = {}));
 var PaymentStatusCode;
 (function (PaymentStatusCode) {
     PaymentStatusCode[PaymentStatusCode["PAYMENT_PENDING"] = 2] = "PAYMENT_PENDING";

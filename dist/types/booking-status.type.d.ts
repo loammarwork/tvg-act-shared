@@ -1,13 +1,13 @@
-export declare const BookingStatus: {
-    readonly HOLD: "VENDOR_CONFIRMATION";
-    readonly PRECONFIRMED_SUCCESS: "PRECONFIRMED";
-    readonly PRECONFIRMED_FAILED: "PRECONFIRM_FAILED";
-    readonly CONFIRMED_SUCCESS: "CONFIRMED";
-    readonly CONFIRMED_FAILED: "CONFIRM_FAILED";
-    readonly CONFIRM_EXPIRED: "CONFIRMATION_EXPIRED";
-    readonly VENDOR_REFUSED: "VENDOR_REFUSED";
-    readonly CANCELLED: "CANCELLED";
-};
+export declare enum BookingStatus {
+    HOLD = "VENDOR_CONFIRMATION",
+    PRECONFIRMED_SUCCESS = "PRECONFIRMED",
+    PRECONFIRMED_FAILED = "PRECONFIRM_FAILED",
+    CONFIRMED_SUCCESS = "CONFIRMED",
+    CONFIRMED_FAILED = "CONFIRM_FAILED",
+    CONFIRM_EXPIRED = "CONFIRMATION_EXPIRED",
+    VENDOR_REFUSED = "VENDOR_REFUSED",
+    CANCELLED = "CANCELLED"
+}
 export declare enum BookingStatusCode {
     HOLD = 7,
     PRECONFIRMED_SUCCESS = 4,
@@ -18,12 +18,12 @@ export declare enum BookingStatusCode {
     VENDOR_REFUSED = 8,
     CANCELLED = 6
 }
-export declare const PaymentStatus: {
-    PAYMENT_PENDING: string;
-    PAYMENT_SUCCESS: string;
-    PAYMENT_EXPIRED: string;
-    PAYMENT_FAILED: string;
-};
+export declare enum PaymentStatus {
+    PAYMENT_PENDING = "PENDING",
+    PAYMENT_SUCCESS = "SUCCESS",
+    PAYMENT_EXPIRED = "EXPIRED",
+    PAYMENT_FAILED = "FAILED"
+}
 export declare enum PaymentStatusCode {
     PAYMENT_PENDING = 2,
     PAYMENT_SUCCESS = 0,
