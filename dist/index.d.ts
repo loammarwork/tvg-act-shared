@@ -11,4 +11,5 @@ export { CancelActivityResponseDTO, CancelBookingHolder, CancelDataStandardRespo
 export { DescriptionMapper } from './mapper/description.mapper';
 export { SegmentMapper } from './mapper/segment.mapper';
 export { PaxType, PaxTypeMapper } from './mapper/pax-type.mapper';
+export { BookingStatus, BookingStatusCode, PaymentStatus, PaymentStatusCode } from './types/booking-status.type';
 export { CancellationType, RefundType } from './types/cancellation-type';

@@ -25,9 +25,9 @@ export declare const PaymentStatus: {
     PAYMENT_FAILED: string;
 };
 export declare enum PaymentStatusCode {
-    PAYMENT_PENDING = "2",
-    PAYMENT_SUCCESS = "0",
-    PAYMENT_EXPIRED = "3",
-    PAYMENT_FAILED = "1"
+    PAYMENT_PENDING = 2,
+    PAYMENT_SUCCESS = 0,
+    PAYMENT_EXPIRED = 3,
+    PAYMENT_FAILED = 1
 }
 export type BookingStatusType = (typeof BookingStatus)[keyof typeof BookingStatus];
