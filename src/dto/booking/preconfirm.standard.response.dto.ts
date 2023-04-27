@@ -12,11 +12,11 @@ export interface CancellationPolicy {
 export class PreconfirmActivityResponseDTO {
   status: BookingStatusType;
   activityReference: string;
-  activityCode: string;
+  activityId: string;
   activityName: string;
   comments: { type: string; text: string }[]; //hotelbed comments->type(=CONTRACT_REMARKS).text
   package: {
-    packageCode: string;
+    packageId: string;
     packageName: string;
   };
   paxes: {

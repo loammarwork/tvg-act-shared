@@ -12,14 +12,14 @@ export interface CancellationPolicy {
 export declare class PreconfirmActivityResponseDTO {
     status: BookingStatusType;
     activityReference: string;
-    activityCode: string;
+    activityId: string;
     activityName: string;
     comments: {
         type: string;
         text: string;
     }[];
     package: {
-        packageCode: string;
+        packageId: string;
         packageName: string;
     };
     paxes: {

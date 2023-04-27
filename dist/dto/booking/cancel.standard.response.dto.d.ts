@@ -2,14 +2,14 @@ import { BookingStatusType } from '../../types/booking-status.type';
 export declare class CancelActivityResponseDTO {
     status: BookingStatusType;
     activityReference: string;
-    activityCode: string;
+    activityId: string;
     activityName: string;
     comments: {
         type: string;
         text: string;
     }[];
     package: {
-        packageCode: string;
+        packageId: string;
         packageName: string;
     };
     paxes: {
