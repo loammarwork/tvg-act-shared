@@ -46,6 +46,7 @@ Object.defineProperty(exports, "PaxTypeMapper", { enumerable: true, get: functio
 var booking_status_type_1 = require("./types/booking-status.type");
 Object.defineProperty(exports, "BookingStatus", { enumerable: true, get: function () { return booking_status_type_1.BookingStatus; } });
 Object.defineProperty(exports, "BookingStatusCode", { enumerable: true, get: function () { return booking_status_type_1.BookingStatusCode; } });
-Object.defineProperty(exports, "PaymentStatus", { enumerable: true, get: function () { return booking_status_type_1.PaymentStatus; } });
-Object.defineProperty(exports, "PaymentStatusCode", { enumerable: true, get: function () { return booking_status_type_1.PaymentStatusCode; } });
+var payment_status_type_1 = require("./types/payment-status.type");
+Object.defineProperty(exports, "PaymentStatus", { enumerable: true, get: function () { return payment_status_type_1.PaymentStatus; } });
+Object.defineProperty(exports, "PaymentStatusCode", { enumerable: true, get: function () { return payment_status_type_1.PaymentStatusCode; } });
 //# sourceMappingURL=index.js.map

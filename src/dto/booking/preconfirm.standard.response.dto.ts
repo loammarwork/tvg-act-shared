@@ -1,4 +1,4 @@
-import { BookingStatusType } from '../../types/booking-status.type';
+import { BookingStatus } from '../../types/booking-status.type';
 import { CancellationType, RefundType } from '../../types/cancellation-type';
 export interface CancellationPolicy {
   type: CancellationType;
@@ -10,7 +10,7 @@ export interface CancellationPolicy {
   notes: string[]; //refundDuration
 }
 export class PreconfirmActivityResponseDTO {
-  status: BookingStatusType;
+  status: BookingStatus;
   activityReference: string;
   activityId: string;
   activityName: string;
@@ -73,7 +73,7 @@ export class PreconfirmDataStandardResponseDTO {
   clientReference: string;
   currency: string;
   amount: number;
-  status: BookingStatusType;
+  status: BookingStatus;
   bookingHolder: PreconfirmBookingHolder;
   activities: PreconfirmActivityResponseDTO[];
   creationDate: string; //iso date;

@@ -1,6 +1,6 @@
-import { BookingStatusType } from '../../types/booking-status.type';
+import { BookingStatus } from '../../types/booking-status.type';
 export declare class CancelActivityResponseDTO {
-    status: BookingStatusType;
+    status: BookingStatus;
     activityReference: string;
     activityId: string;
     activityName: string;
@@ -63,7 +63,7 @@ export declare class CancelDataStandardResponseDTO {
     clientReference: string;
     currency: string;
     amount: number;
-    status: BookingStatusType;
+    status: BookingStatus;
     bookingHolder: CancelBookingHolder;
     activities: CancelActivityResponseDTO[];
     creationDate: string;

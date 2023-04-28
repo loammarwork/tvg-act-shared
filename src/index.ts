@@ -51,6 +51,7 @@ export {
 export { DescriptionMapper } from './mapper/description.mapper';
 export { SegmentMapper } from './mapper/segment.mapper';
 export { PaxType, PaxTypeMapper } from './mapper/pax-type.mapper';
-export { BookingStatus, BookingStatusCode, PaymentStatus, PaymentStatusCode } from './types/booking-status.type';
+export { BookingStatus, BookingStatusCode } from './types/booking-status.type';
+export { PaymentStatus, PaymentStatusCode } from './types/payment-status.type';
 //Type
 export { CancellationType, RefundType } from './types/cancellation-type';
