@@ -11,6 +11,8 @@ var BookingStatus;
     BookingStatus["CONFIRM_EXPIRED"] = "CONFIRMATION_EXPIRED";
     BookingStatus["VENDOR_REFUSED"] = "VENDOR_REFUSED";
     BookingStatus["CANCELLED"] = "CANCELLED";
+    BookingStatus["PRECONFIRMED_SOME_SUCCESS"] = "PRECONFIRMED_SOME_SUCCESS";
+    BookingStatus["CONFIRMED_SOME_SUCCESS"] = "PRECONFIRMED_SOME_SUCCESS";
 })(BookingStatus = exports.BookingStatus || (exports.BookingStatus = {}));
 var BookingStatusCode;
 (function (BookingStatusCode) {
@@ -19,8 +21,10 @@ var BookingStatusCode;
     BookingStatusCode[BookingStatusCode["PRECONFIRMED_FAILED"] = 5] = "PRECONFIRMED_FAILED";
     BookingStatusCode[BookingStatusCode["CONFIRMED_SUCCESS"] = 0] = "CONFIRMED_SUCCESS";
     BookingStatusCode[BookingStatusCode["CONFIRMED_FAILED"] = 1] = "CONFIRMED_FAILED";
-    BookingStatusCode[BookingStatusCode["CONFIRM_EXPIRED"] = 3] = "CONFIRM_EXPIRED";
-    BookingStatusCode[BookingStatusCode["VENDOR_REFUSED"] = 8] = "VENDOR_REFUSED";
+    BookingStatusCode[BookingStatusCode["CONFIRM_EXPIRED"] = 2] = "CONFIRM_EXPIRED";
+    BookingStatusCode[BookingStatusCode["VENDOR_REFUSED"] = 3] = "VENDOR_REFUSED";
     BookingStatusCode[BookingStatusCode["CANCELLED"] = 6] = "CANCELLED";
+    BookingStatusCode[BookingStatusCode["PRECONFIRMED_SOME_SUCCESS"] = 8] = "PRECONFIRMED_SOME_SUCCESS";
+    BookingStatusCode[BookingStatusCode["CONFIRMED_SOME_SUCCESS"] = 9] = "CONFIRMED_SOME_SUCCESS";
 })(BookingStatusCode = exports.BookingStatusCode || (exports.BookingStatusCode = {}));
 //# sourceMappingURL=booking-status.type.js.map
