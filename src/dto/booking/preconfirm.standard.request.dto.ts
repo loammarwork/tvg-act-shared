@@ -120,3 +120,8 @@ export class PreconfirmStandardRequestBodyDTO {
   @Type(() => PreconfirmActivityStandardRequestBodyDTO)
   activities: PreconfirmActivityStandardRequestBodyDTO[];
 }
+
+export class PreconfirmStandardRequestHeaderDTO {
+  @IsString()
+  'x-api-key': string;
+}

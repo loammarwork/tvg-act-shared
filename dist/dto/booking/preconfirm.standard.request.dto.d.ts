@@ -50,3 +50,6 @@ export declare class PreconfirmStandardRequestBodyDTO {
     bookingHolder: PreconfirmHolderStandardRequestBodyDTO;
     activities: PreconfirmActivityStandardRequestBodyDTO[];
 }
+export declare class PreconfirmStandardRequestHeaderDTO {
+    'x-api-key': string;
+}

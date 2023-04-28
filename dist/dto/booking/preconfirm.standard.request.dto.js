@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PreconfirmStandardRequestBodyDTO = exports.PreconfirmActivityStandardRequestBodyDTO = exports.PreconfirmPaxRequestBodyDTO = exports.PreconfirmPaxAmountRequestBodyDTO = exports.PreconfirmAnswerRequestBodyDTO = exports.PreconfirmQuestionRequestBodyDTO = exports.PreconfirmActivityDetailRequestBodyDTO = exports.PreconfirmHolderStandardRequestBodyDTO = void 0;
+exports.PreconfirmStandardRequestHeaderDTO = exports.PreconfirmStandardRequestBodyDTO = exports.PreconfirmActivityStandardRequestBodyDTO = exports.PreconfirmPaxRequestBodyDTO = exports.PreconfirmPaxAmountRequestBodyDTO = exports.PreconfirmAnswerRequestBodyDTO = exports.PreconfirmQuestionRequestBodyDTO = exports.PreconfirmActivityDetailRequestBodyDTO = exports.PreconfirmHolderStandardRequestBodyDTO = void 0;
 const class_transformer_1 = require("class-transformer");
 const class_validator_1 = require("class-validator");
 class PreconfirmHolderStandardRequestBodyDTO {
@@ -198,4 +198,11 @@ __decorate([
     __metadata("design:type", Array)
 ], PreconfirmStandardRequestBodyDTO.prototype, "activities", void 0);
 exports.PreconfirmStandardRequestBodyDTO = PreconfirmStandardRequestBodyDTO;
+class PreconfirmStandardRequestHeaderDTO {
+}
+__decorate([
+    (0, class_validator_1.IsString)(),
+    __metadata("design:type", String)
+], PreconfirmStandardRequestHeaderDTO.prototype, "x-api-key", void 0);
+exports.PreconfirmStandardRequestHeaderDTO = PreconfirmStandardRequestHeaderDTO;
 //# sourceMappingURL=preconfirm.standard.request.dto.js.map
