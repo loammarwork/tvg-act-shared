@@ -232,7 +232,7 @@ export interface Allotment {
 export interface PaxAmount {
   paxType: string;
   amount: number;
-  requiredTarget: { name: string; code: string }[];
+  requiredTarget: { name: string; code: string } | null;
   nettAmount: number;
   minPurchaseQty: any;
   maxPurchaseQty: any;
