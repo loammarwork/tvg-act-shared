@@ -1,47 +1,43 @@
-//sub และ main categories
-export const TargetSegment = {
-  AttractionAndTicket: 'Attractions & Tickets',
-  TourAndSightSeeing: 'Tours & Sightseeing',
-  FoodAndDrink: 'Food & Drink',
-  RelaxSpaAndBeauty: 'Relax Spa & Beauty',
-  Transport: 'Transport',
-  Health: 'Health',
-  WifiAndSimCard: 'Wifi & Sim card',
-  ThemeParksAndWaterParks: 'Theme parks & Water parks',
-  MuseumsAndGalleries: 'Museums & Galleries',
-  ZooAndFarms: 'Zoo & Farms',
-  MusicalTheatre: 'Musical theatre',
-  Tour: 'Tour',
-  FullDayTour: 'Full-day tours',
-  MultiDayTour: 'Muti-day tours',
-  NatureAndWildlifeTours: 'Nature & Wildlife Tours',
-  HeritageAndCulturalTours: 'Heritage & Cultural tours',
-  CruisesSailingAndWaterTours: 'Cruises, sailing & Water tours',
-  RestaurantAndDiningVouchers: 'Restaurant & Dining Vouchers',
-  DinnerCruises: 'Dinner Cruises',
-  D0_3_Hours: '0 - 3 Hours',
-  D3_5_Hours: '3 - 5 Hours',
-  D5_7_Hours: '5 - 7 Hours',
-  D1_3_Days: '1 - 3 Days',
-  More_3_Days: '3+ Days',
-  Other: 'Other',
-  SportActivities: 'Sport Activities',
-  WorkShopActivities: 'Workshop Activities',
-} as const;
-//Main category สำหรับแสดงหน้าแอปเท่านั้น
+export type TargetCategoryTH =
+  | 'Tour'
+  | 'Attractions & Tickets'
+  | 'Tours & Sightseeing'
+  | 'Food & Drinks'
+  | 'Relax Spa & Beauty'
+  | 'Transport'
+  | 'Health'
+  | 'Sim card & Wifi'
+  | 'Theme parks & Water parks'
+  | 'Museums & Galleries'
+  | 'Zoo & Farms'
+  | 'Musical theatre'
+  | 'Full-day tours'
+  | 'Muti-day tours'
+  | 'Nature & Wildlife Tours'
+  | 'Heritage & Cultural tours'
+  | 'Cruises| sailing & Water tours'
+  | 'Restaurant & Dining Vouchers'
+  | 'Dinner Cruises'
+  | '0 - 3 Hours'
+  | '3 - 5 Hours'
+  | '5 - 7 Hours'
+  | '1 - 3 Days'
+  | '3+ Days'
+  | 'Other'
+  | 'Sport Activities'
+  | 'Workshop Activities';
 
-export type TargetSegmentType = (typeof TargetSegment)[keyof typeof TargetSegment];
-export type SegmentMapperTypeRecord<T> = Record<string, T>;
-export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = {
+export type CategoryMapperTypeRecordTH<T> = Record<string, T>;
+export const CategoryMapperTH: CategoryMapperTypeRecordTH<Array<TargetCategoryTH>> = {
   //GlobalTix
   //['Entertainment']: ['Workshop Activities'],
   ['Events']: ['Other'],
   ['Wellness']: ['Relax Spa & Beauty'],
   ['Attraction']: ['Attractions & Tickets'],
   ['Tours']: ['Tours & Sightseeing'],
-  ['F&B']: ['Food & Drink'],
+  ['F&B']: ['Food & Drinks'],
   ['Transportation']: ['Transport'],
-  ['WiFi & SIM Card']: ['Wifi & Sim card'],
+  ['WiFi & SIM Card']: ['Sim card & Wifi'],
   ['Lifestyle']: ['Sport Activities', 'Workshop Activities'],
   ['Others']: ['Other'],
   //HotelBed
@@ -50,7 +46,7 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Tickets & Attraction Passes']: ['Attractions & Tickets'],
   ['Art & culture']: ['Workshop Activities'],
   ['Shows, sports and special events']: ['Sport Activities'],
-  ['Gastronomy & nightlife']: ['Food & Drink'],
+  ['Gastronomy & nightlife']: ['Food & Drinks'],
   ['Outdoor activities & Adventure']: ['Tours & Sightseeing'],
   ['Day Trips & Excursions']: ['Tours & Sightseeing'],
   ['Zoo, Aquarium & Nature']: ['Attractions & Tickets'],
@@ -68,7 +64,7 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Full day']: ['Tours & Sightseeing'],
   ['Half-day morning']: ['Tours & Sightseeing'],
   ['Half-day afternoon']: ['Tours & Sightseeing'],
-  ['Evening']: ['Food & Drink', 'Other'],
+  ['Evening']: ['Food & Drinks', 'Other'],
   ['Families with kids']: ['Workshop Activities', 'Other'],
   ['Adult only']: ['Other'],
   ['Couples']: ['Other'],
@@ -81,7 +77,7 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Nature']: ['Tours & Sightseeing'],
   ['Time Out']: ['Other'],
   ['Entertainment']: ['Workshop Activities'],
-  ['Food & Drink']: ['Food & Drink'],
+  ['Food & Drink']: ['Food & Drinks'],
   ['Activities']: ['Workshop Activities'],
   ['Ocean College']: ['Attractions & Tickets'],
   ['MyMagic+']: ['Attractions & Tickets'],
@@ -104,12 +100,12 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Self-drive tours']: ['Tours & Sightseeing'],
   ['Private tours']: ['Tours & Sightseeing'],
   ['Seat in coach scheduled departures']: ['Transport'],
-  ['Mini cruises']: ['Food & Drink'],
+  ['Mini cruises']: ['Food & Drinks'],
   ['City Break']: ['Tours & Sightseeing'],
   ['Sun and Beach']: ['Tours & Sightseeing'],
   ['Cultural tours']: ['Tours & Sightseeing'],
   ['Pilgrimage / Religion']: ['Tours & Sightseeing'],
-  ['Gastronomy tours']: ['Food & Drink'],
+  ['Gastronomy tours']: ['Food & Drinks'],
   ['Safari, 4x4, quad']: ['Tours & Sightseeing'],
   ['Ski, snow']: ['Sport Activities'],
   ['Trekking']: ['Sport Activities'],
@@ -142,7 +138,7 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Evan Evans']: ['Tours & Sightseeing'],
   ['Key Tours']: ['Tours & Sightseeing'],
   ['Pink Jeep']: ['Tours & Sightseeing', 'Sport Activities'],
-  ['Plaza Premium Lounge']: ['Food & Drink'],
+  ['Plaza Premium Lounge']: ['Food & Drinks'],
   ['Maverick']: ['Other'],
   ['City Wonders']: ['Tours & Sightseeing'],
   ['Papillon']: ['Tours & Sightseeing'],
@@ -167,7 +163,7 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Theme & Water Park']: ['Attractions & Tickets'],
   ['Observation']: ['Attractions & Tickets'],
   ['City tour']: ['Tours & Sightseeing'],
-  ['Cruise']: ['Food & Drink'],
+  ['Cruise']: ['Food & Drinks'],
   ['Cruise, Day Trips']: ['Attractions & Tickets'],
   ['Day Trips']: ['Full-day tours', 'Tours & Sightseeing'],
   ['Island Tours']: ['Tours & Sightseeing'],
@@ -177,11 +173,11 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Water Activities']: ['Transport'],
   ['Massage & Spa']: ['Relax Spa & Beauty'],
   ['Salon & Beauty']: ['Relax Spa & Beauty'],
-  ['Chinese Food']: ['Food & Drink'],
-  ['Italian Food']: ['Food & Drink'],
-  ['Japanese Food']: ['Food & Drink'],
-  ['Thai Authentic Food']: ['Food & Drink'],
-  ['Dining']: ['Food & Drink'],
+  ['Chinese Food']: ['Food & Drinks'],
+  ['Italian Food']: ['Food & Drinks'],
+  ['Japanese Food']: ['Food & Drinks'],
+  ['Thai Authentic Food']: ['Food & Drinks'],
+  ['Dining']: ['Food & Drinks'],
   ['City tour guide']: ['Tours & Sightseeing'],
   ['Historical tour guide']: ['Tours & Sightseeing'],
   ['Adventure guide']: ['Tours & Sightseeing'],
@@ -198,43 +194,14 @@ export const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>> = 
   ['Senior (Ages 60 years or Above)']: ['Other'],
   ['Thai Residence Only']: ['Other'],
 };
-export type SegmentMapperType = keyof typeof SegmentMapper;
+export type CategoryMapperTHType = keyof typeof CategoryMapperTH;
 
-export const SegmentMainMapper = {
-  ['Events']: ['Other'],
+export const CategoryCMSMapperTH = {
+  'activities.categoty.attractions.and.tickets': 'สถานที่ท่องเที่ยว และตั๋ว',
+  'activities.categoty.food.and.drinks': 'อาหาร และเครื่องดื่ม',
+  'activities.categoty.health': 'สุขภาพ',
+  'activities.categoty.relax_spa.and.beauty': 'รีแลกซ์สปา & ความงาม',
+  'activities.categoty.tours.and.sightseeing': 'ทัวร์ & เที่ยวชมสถานที่',
+  'activities.categoty.transport': 'ขนส่ง',
+  'activities.categoty.wifi.and.sim_card': 'ซิมการ์ด & ไวไฟ',
 };
-
-//Start ERP
-export type ERPMapperType = keyof typeof TargetSegment;
-export type ERPMapperValue = (typeof TargetSegment)[keyof typeof TargetSegment];
-export type ERPMapperTypeRecord = Record<ERPMapperValue, ERPMapperType>;
-export const ERPCategoryMapperCode: ERPMapperTypeRecord = {
-  'Attractions & Tickets': 'AttractionAndTicket',
-  'Tours & Sightseeing': 'TourAndSightSeeing',
-  'Food & Drink': 'FoodAndDrink',
-  'Relax Spa & Beauty': 'RelaxSpaAndBeauty',
-  Transport: 'Transport',
-  Health: 'Health',
-  'Wifi & Sim card': 'WifiAndSimCard',
-  'Sport Activities': 'SportActivities',
-  'Workshop Activities': 'WorkShopActivities',
-  Other: 'Other',
-  'Theme parks & Water parks': 'Other',
-  'Museums & Galleries': 'Other',
-  'Zoo & Farms': 'Other',
-  'Musical theatre': 'Other',
-  Tour: 'Transport',
-  'Full-day tours': 'Other',
-  'Muti-day tours': 'Other',
-  'Nature & Wildlife Tours': 'Other',
-  'Heritage & Cultural tours': 'Other',
-  'Cruises, sailing & Water tours': 'Other',
-  'Restaurant & Dining Vouchers': 'Other',
-  'Dinner Cruises': 'Other',
-  '0 - 3 Hours': 'Other',
-  '3 - 5 Hours': 'Other',
-  '5 - 7 Hours': 'Other',
-  '1 - 3 Days': 'Other',
-  '3+ Days': 'Other',
-};
-//End ERP
