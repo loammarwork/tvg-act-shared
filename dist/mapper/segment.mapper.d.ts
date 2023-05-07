@@ -27,11 +27,14 @@ export declare const TargetSegment: {
     readonly SportActivities: "Sport Activities";
     readonly WorkShopActivities: "Workshop Activities";
 };
-export type ERPMapperType = keyof typeof TargetSegment;
-export type ERPMapperValue = (typeof TargetSegment)[keyof typeof TargetSegment];
-export type ERPMapperTypeRecord = Record<ERPMapperValue, ERPMapperType>;
-export declare const ERPCategoryMapperCode: ERPMapperTypeRecord;
 export type TargetSegmentType = (typeof TargetSegment)[keyof typeof TargetSegment];
 export type SegmentMapperTypeRecord<T> = Record<string, T>;
 export declare const SegmentMapper: SegmentMapperTypeRecord<Array<TargetSegmentType>>;
 export type SegmentMapperType = keyof typeof SegmentMapper;
+export declare const SegmentMainMapper: {
+    Events: string[];
+};
+export type ERPMapperType = keyof typeof TargetSegment;
+export type ERPMapperValue = (typeof TargetSegment)[keyof typeof TargetSegment];
+export type ERPMapperTypeRecord = Record<ERPMapperValue, ERPMapperType>;
+export declare const ERPCategoryMapperCode: ERPMapperTypeRecord;

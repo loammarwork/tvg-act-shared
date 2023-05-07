@@ -50,8 +50,7 @@ export {
 
 export { DescriptionMapper } from './mapper/description.mapper';
 export { SegmentMapper } from './mapper/segment.mapper';
-export { CategoryCMSMapperEN, CategoryMapperEN, CategoryMapperENType, CategoryMapperTypeRecordEN } from './mapper/category-mapper/category-en.mapper';
-export { CategoryCMSMapperTH, CategoryMapperTH, CategoryMapperTHType, CategoryMapperTypeRecordTH } from './mapper/category-mapper/category-th.mapper';
+export { CategoryCMSMapper, CategoryMapper } from './mapper/category-mapper/category.mapper';
 export { PaxType, PaxTypeMapper } from './mapper/pax-type.mapper';
 export { BookingStatus, BookingStatusCode } from './types/booking-status.type';
 export { PaymentStatus, PaymentStatusCode } from './types/payment-status.type';

@@ -219,7 +219,7 @@ export interface PaxAmount {
     requiredTarget: {
         name: string;
         code: string;
-    }[];
+    } | null;
     nettAmount: number;
     minPurchaseQty: any;
     maxPurchaseQty: any;
