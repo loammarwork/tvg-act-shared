@@ -30,7 +30,7 @@ export type TargetCategoryTH =
 //prettier-ignore
 export const CategoryTHValueToKeyCMS = {
     'Attractions & tickets': 'activities.categoty.attractions.and.tickets',
-    'Food & drinks': 'activities.categoty.food.and.drinks',
+    'Food & Drinks': 'activities.categoty.food.and.drinks',
     'Health': 'activities.categoty.health',
     'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
     'Tours & Sightseeing': 'activities.categoty.tours.and.sightseeing',

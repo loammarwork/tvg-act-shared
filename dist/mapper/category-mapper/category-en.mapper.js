@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CategoryCMSMapperEN = exports.CategoryMapperEN = exports.CategoryENValueToKeyCMS = void 0;
 exports.CategoryENValueToKeyCMS = {
     'Attractions & tickets': 'activities.categoty.attractions.and.tickets',
-    'Food & drinks': 'activities.categoty.food.and.drinks',
+    'Food & Drinks': 'activities.categoty.food.and.drinks',
     'Health': 'activities.categoty.health',
     'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
     'Tours & Sightseeing': 'activities.categoty.tours.and.sightseeing',
@@ -173,7 +173,7 @@ exports.CategoryMapperEN = {
 };
 exports.CategoryCMSMapperEN = {
     'activities.categoty.attractions.and.tickets': 'Attractions & tickets',
-    'activities.categoty.food.and.drinks': 'Food & drinks',
+    'activities.categoty.food.and.drinks': 'Food & Drinks',
     'activities.categoty.health': 'Health',
     'activities.categoty.relax_spa.and.beauty': 'Relax Spa & Beauty',
     'activities.categoty.tours.and.sightseeing': 'Tours & Sightseeing',

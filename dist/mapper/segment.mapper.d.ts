@@ -1,7 +1,7 @@
 export declare const TargetSegment: {
     readonly AttractionAndTicket: "Attractions & Tickets";
     readonly TourAndSightSeeing: "Tours & Sightseeing";
-    readonly FoodAndDrink: "Food & Drink";
+    readonly FoodAndDrink: "Food & Drinks";
     readonly RelaxSpaAndBeauty: "Relax Spa & Beauty";
     readonly Transport: "Transport";
     readonly Health: "Health";

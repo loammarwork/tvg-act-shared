@@ -30,7 +30,7 @@ export type TargetCategoryEN =
 //prettier-ignore
 export const CategoryENValueToKeyCMS = {
   'Attractions & tickets': 'activities.categoty.attractions.and.tickets',
-  'Food & drinks': 'activities.categoty.food.and.drinks',
+  'Food & Drinks': 'activities.categoty.food.and.drinks',
   'Health': 'activities.categoty.health',
   'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
   'Tours & Sightseeing': 'activities.categoty.tours.and.sightseeing',
@@ -209,7 +209,7 @@ export type CategoryMapperENType = keyof typeof CategoryMapperEN;
 
 export const CategoryCMSMapperEN = {
   'activities.categoty.attractions.and.tickets': 'Attractions & tickets',
-  'activities.categoty.food.and.drinks': 'Food & drinks',
+  'activities.categoty.food.and.drinks': 'Food & Drinks',
   'activities.categoty.health': 'Health',
   'activities.categoty.relax_spa.and.beauty': 'Relax Spa & Beauty',
   'activities.categoty.tours.and.sightseeing': 'Tours & Sightseeing',
