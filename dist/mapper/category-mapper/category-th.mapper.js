@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CategoryCMSMapperTH = exports.CategoryMapperTH = exports.CategoryTHValueToKeyCMS = void 0;
 exports.CategoryTHValueToKeyCMS = {
-    'Attractions & tickets': 'activities.categoty.attractions.and.tickets',
+    'Attractions & Tickets': 'activities.categoty.attractions.and.tickets',
     'Food & Drinks': 'activities.categoty.food.and.drinks',
     'Health': 'activities.categoty.health',
     'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
