@@ -1,6 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CategoryCMSMapperEN = exports.CategoryMapperEN = void 0;
+exports.CategoryCMSMapperEN = exports.CategoryMapperEN = exports.CategoryENValueToKeyCMS = void 0;
+exports.CategoryENValueToKeyCMS = {
+    'Attractions & tickets': 'activities.categoty.attractions.and.tickets',
+    'Food & drinks': 'activities.categoty.food.and.drinks',
+    'Health': 'activities.categoty.health',
+    'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
+    'Tours & Sightseeing': 'activities.categoty.tours.and.sightseeing',
+    'Transport': 'activities.categoty.transport',
+    'Wifi & sim card': 'activities.categoty.wifi.and.sim_card',
+};
 exports.CategoryMapperEN = {
     ['Events']: ['Other'],
     ['Wellness']: ['Relax Spa & Beauty'],

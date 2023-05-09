@@ -27,6 +27,17 @@ export type TargetCategoryTH =
   | 'Sport Activities'
   | 'Workshop Activities';
 
+//prettier-ignore
+export const CategoryTHValueToKeyCMS = {
+    'Attractions & tickets': 'activities.categoty.attractions.and.tickets',
+    'Food & drinks': 'activities.categoty.food.and.drinks',
+    'Health': 'activities.categoty.health',
+    'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
+    'Tours & Sightseeing': 'activities.categoty.tours.and.sightseeing',
+    'Transport': 'activities.categoty.transport',
+    'Wifi & sim card': 'activities.categoty.wifi.and.sim_card',
+  };
+
 export type CategoryMapperTypeRecordTH<T> = Record<string, T>;
 export const CategoryMapperTH: CategoryMapperTypeRecordTH<Array<TargetCategoryTH>> = {
   //GlobalTix
