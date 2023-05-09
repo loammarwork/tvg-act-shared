@@ -1,4 +1,4 @@
-export type TargetCategoryTH = 'Tour' | 'Attractions & Tickets' | 'Tours & Sightseeing' | 'Food & Drinks' | 'Relax Spa & Beauty' | 'Transport' | 'Health' | 'Sim card & Wifi' | 'Theme parks & Water parks' | 'Museums & Galleries' | 'Zoo & Farms' | 'Musical theatre' | 'Full-day tours' | 'Muti-day tours' | 'Nature & Wildlife Tours' | 'Heritage & Cultural tours' | 'Cruises| sailing & Water tours' | 'Restaurant & Dining Vouchers' | 'Dinner Cruises' | '0 - 3 Hours' | '3 - 5 Hours' | '5 - 7 Hours' | '1 - 3 Days' | '3+ Days' | 'Other' | 'Sport Activities' | 'Workshop Activities';
+export type TargetCategoryTH = 'Tour' | 'Attractions & Tickets' | 'Tours & Sightseeing' | 'Food & Drinks' | 'Relax Spa & Beauty' | 'Transport' | 'Health' | 'Wifi & Sim card' | 'Theme parks & Water parks' | 'Museums & Galleries' | 'Zoo & Farms' | 'Musical theatre' | 'Full-day tours' | 'Muti-day tours' | 'Nature & Wildlife Tours' | 'Heritage & Cultural tours' | 'Cruises| sailing & Water tours' | 'Restaurant & Dining Vouchers' | 'Dinner Cruises' | '0 - 3 Hours' | '3 - 5 Hours' | '5 - 7 Hours' | '1 - 3 Days' | '3+ Days' | 'Other' | 'Sport Activities' | 'Workshop Activities';
 export declare const CategoryTHValueToKeyCMS: {
     'Attractions & tickets': string;
     'Food & drinks': string;
@@ -6,7 +6,7 @@ export declare const CategoryTHValueToKeyCMS: {
     'Relax Spa & Beauty': string;
     'Tours & Sightseeing': string;
     Transport: string;
-    'Wifi & sim card': string;
+    'Wifi & Sim card': string;
 };
 export type CategoryMapperTypeRecordTH<T> = Record<string, T>;
 export declare const CategoryMapperTH: CategoryMapperTypeRecordTH<Array<TargetCategoryTH>>;

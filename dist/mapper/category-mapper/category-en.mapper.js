@@ -8,7 +8,7 @@ exports.CategoryENValueToKeyCMS = {
     'Relax Spa & Beauty': 'activities.categoty.relax_spa.and.beauty',
     'Tours & Sightseeing': 'activities.categoty.tours.and.sightseeing',
     'Transport': 'activities.categoty.transport',
-    'Wifi & sim card': 'activities.categoty.wifi.and.sim_card',
+    'Wifi & Sim card': 'activities.categoty.wifi.and.sim_card',
 };
 exports.CategoryMapperEN = {
     ['Events']: ['Other'],
@@ -17,7 +17,7 @@ exports.CategoryMapperEN = {
     ['Tours']: ['Tours & Sightseeing'],
     ['F&B']: ['Food & Drinks'],
     ['Transportation']: ['Transport'],
-    ['WiFi & SIM Card']: ['Sim card & Wifi'],
+    ['WiFi & SIM Card']: ['Wifi & Sim card'],
     ['Lifestyle']: ['Sport Activities', 'Workshop Activities'],
     ['Others']: ['Other'],
     ['City tours']: ['Tours & Sightseeing'],
