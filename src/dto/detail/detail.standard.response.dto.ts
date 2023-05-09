@@ -225,8 +225,8 @@ export interface OperationDetail {
 }
 
 export interface Allotment {
-  remaining: string;
-  limit: string;
+  remaining: string | number;
+  limit: string | number;
 }
 
 export interface PaxAmount {
@@ -234,9 +234,9 @@ export interface PaxAmount {
   amount: number;
   requiredTarget: { name: string; code: string } | null;
   nettAmount: number;
-  minPurchaseQty: any;
-  maxPurchaseQty: any;
-  remaining: string;
+  minPurchaseQty?: any;
+  maxPurchaseQty?: any;
+  remaining?: string;
   amountDetails: AmountDetails2;
 }
 
