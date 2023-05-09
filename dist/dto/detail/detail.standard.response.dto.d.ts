@@ -199,6 +199,7 @@ export interface OperationDate {
     amountFrom: AmountFrom2;
 }
 export interface OperationDetail {
+    showTimeId?: string | null;
     showTime: string | null;
     allotment: Allotment;
     sellOnTime: any;

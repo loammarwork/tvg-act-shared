@@ -216,6 +216,7 @@ export interface OperationDate {
 }
 
 export interface OperationDetail {
+  showTimeId?: string | null;
   showTime: string | null; //00:00 or null
   allotment: Allotment;
   sellOnTime: any;
