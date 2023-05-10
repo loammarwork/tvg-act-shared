@@ -211,6 +211,7 @@ export interface OperationDetail {
     resourceData: ResourceData;
 }
 export interface Allotment {
+    alottmentId?: string;
     remaining: string | number;
     limit: string | number;
 }
