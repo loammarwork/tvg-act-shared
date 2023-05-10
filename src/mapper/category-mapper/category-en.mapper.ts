@@ -41,16 +41,20 @@ export const CategoryENValueToKeyCMS = {
 export type CategoryMapperTypeRecordEN<T> = Record<string, T>;
 export const CategoryMapperEN: CategoryMapperTypeRecordEN<Array<TargetCategoryEN>> = {
   //GlobalTix
+  ['F&B']: ['Food & Drinks'],
+  ['Attraction']: ['Attractions & Tickets'],
+  ['WiFi & SIM Card']: ['Wifi & Sim card'],
+  ['Others']: ['Other'],
+  ['Lifestyle']: ['Sport Activities', 'Workshop Activities'],
   //['Entertainment']: ['Workshop Activities'],
   ['Events']: ['Other'],
-  ['Wellness']: ['Relax Spa & Beauty'],
-  ['Attraction']: ['Attractions & Tickets'],
   ['Tours']: ['Tours & Sightseeing'],
-  ['F&B']: ['Food & Drinks'],
   ['Transportation']: ['Transport'],
-  ['WiFi & SIM Card']: ['Wifi & Sim card'],
-  ['Lifestyle']: ['Sport Activities', 'Workshop Activities'],
-  ['Others']: ['Other'],
+  ['Novelty & Excitement']: ['Other'],
+  //['Dining']: ['Other'],
+  ['Sustainability']: ['Other'],
+  ['Wellness']: ['Relax Spa & Beauty'],
+
   //HotelBed
   ['City tours']: ['Tours & Sightseeing'],
   ['Amusement Parks']: ['Attractions & Tickets'],

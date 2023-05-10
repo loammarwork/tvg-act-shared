@@ -226,6 +226,7 @@ export interface OperationDetail {
 }
 
 export interface Allotment {
+  alottmentId?: string;
   remaining: string | number;
   limit: string | number;
 }
